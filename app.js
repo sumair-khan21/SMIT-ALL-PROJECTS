@@ -2776,7 +2776,48 @@
 //         alert("Try agian")
 //     }
 // }
+// ==================================================================================
 
+
+// let userInput = +prompt("ENter password lenght: ")
+// let password = ""
+
+
+// for(let i = 0; i < userInput; i++){
+//     let random = Math.round(Math.random() * 3)
+//     let charCode;
+
+//     if(random == 0){
+//         charCode = Math.floor(Math.random() * 6 ) + 87
+//     }else if(random == 1){
+//         charCode = Math.floor(Math.random() * 10) + 48
+//     }else{
+//         charCode = Math.floor(Math.random() * 6) + 65
+//     }
+//     password += String.fromCharCode(charCode)
+// }
+
+// console.log(password);
+
+
+
+// let color = "#"
+// for(let i = 0; i < 6; i++){
+    
+//     let random = Math.round(Math.random());
+//     let code;
+
+// if(random == 1){
+//     code = Math.floor(Math.random() * 6) + 97;
+//     // console.log(code);
+    
+// }else{
+//     code = (Math.floor(Math.random() * 10) + 48);
+// }
+//  color += String.fromCharCode(code)
+// }
+
+// console.log(color);  
 
 
 
@@ -2860,6 +2901,11 @@
 
 // document.getElementById("text").innerHTML = "<b>Bold Text</b>";
 // document.getElementById("text").innerHTML = "<h1>Hello</h1>";
+
+
+
+
+
 
 
 
