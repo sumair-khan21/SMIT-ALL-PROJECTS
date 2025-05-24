@@ -3108,8 +3108,76 @@
 
                // JavaScript Date Object
 
-let now = new Date()
-console.log(now);
+// let now = new Date()
+// console.log(now);
+// console.log(now.getFullYear());
+// console.log(now.getMonth());
+// console.log(now.getDay());
+// console.log(now.getHours());
+// console.log(now.getMinutes());
+// console.log(now.getSeconds());
+// console.log(now.getMilliseconds());
+// console.log(now.getDate());
+
+
+// Print current date in DD/MM/YYYY format.
+// let today = new Date()
+// // console.log(today);
+// let formmated = `${today.getDate()}/${today.getMonth() + 1}/${today.getFullYear()}`
+// console.log(formmated);
+
+
+
+// Print only the time in HH:MM:SS format.
+// let today = new Date()
+// let format = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`
+// console.log(format);
+
+
+// Print the day of the week using getDay() and map it to name (e.g., 0 = Sunday).
+
+// let today = new Date()
+// let day = today.getDay()
+
+// switch(day){
+//     case 0:
+//         console.log("Sunday");
+//         break;
+//     case 1:
+//         console.log("Monday");
+//         break;
+//     case 2:
+//         console.log("Tuesday");
+//         break;
+//     case 3:
+//         console.log("Wednesday");
+//         break;
+//     case 4:
+//         console.log("Thursday");
+//         break;
+//     case 5:
+//         console.log("Friday");
+//         break;
+//     case 6:
+//         console.log("Saturday");
+//         break;
+//     default:
+//         console.log("Invalid day");
+// }
+
+
+// Create a small function that shows "Today is: [Day], [Month] [Date], [Year]"
+
+// function showDate(){
+//     let today = new Date()
+//     let day = today.getDay()
+//     let month = today.getMonth() + 1
+//     let date = today.getDate()
+//     let year = today.getFullYear()
+//     console.log(`Today is: ${day}, ${month},${date}, ${year}`);
+    
+// }
+// showDate()
 
 
 
