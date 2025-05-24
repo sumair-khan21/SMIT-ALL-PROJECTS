@@ -2821,6 +2821,205 @@
 
 
 
+
+// ================================================================================
+
+// Converting Strings to Numbers in JavaScript
+
+// parseInt
+// let str = '123'
+// let num = parseInt(str)
+// console.log(num);
+
+// let str = '123.34'
+// let num = parseInt(str)
+// console.log(num)
+
+// parseFloat
+// let str = '234.6789'
+// let float = parseFloat(str)
+// console.log(float);
+
+// Number
+// let num1 = "1234";
+// let num2 = Number(num1)
+// console.log(num2);
+
+
+// let str5 = "123.45";
+// let num5 = Number(str5);
+// console.log(num5);  // Output: 123.45
+
+
+
+// Convert "100" to a number using all 3 methods.
+
+// let str = '100'
+// let num = parseInt(str)
+// console.log(num);
+
+
+// let str = '100.5678'
+// let num = parseFloat(str)
+// console.log(num);
+
+
+
+// let str = '100.5678'
+// let num = Number(str)
+// console.log(num);
+
+
+// Convert "89.99" to a number using all 3 methods.
+
+// let str = "89.19"
+// let num = parseInt(str)
+// console.log(num);
+
+
+// let str = "89.99"
+// let num = parseFloat(str)
+// console.log(num);
+
+
+
+// let str = "89.99"
+// let num = Number(str)
+// console.log(num);
+
+
+// Try converting "abc123" using each method.
+
+
+// let str = "abc123"
+// let num = parseInt(str)
+// console.log(num);
+
+
+// let str = "abc123"
+// let num = parseFloat(str)
+// console.log(num);
+
+
+
+// let str = "$123"
+// let num = Number(str)
+// console.log(num);
+
+
+
+// Convert "$45.50" — and observe results
+
+// let amount = "$45.50"
+// let replace = amount.replace("$", "")
+// let float = parseFloat(replace)
+// console.log(float);
+
+
+
+// Try converting " 75.25 " (string with spaces).
+
+// let str = "   75.25   ";
+// let result = parseInt(str);
+// console.log(result);  // Output: 75
+
+// let str = "   75.25   ";
+// let result = parseFloat(str);
+// console.log(result);  // Output: 75.25
+
+
+// let str = "   75.25   ";
+// let result = Number(str);
+// console.log(result);  // Output: 75.25
+
+
+
+// let num = 123
+// let str = num.toString()
+// console.log(str);
+
+
+
+// let num = 123
+// let str = String(num)
+// console.log(str);
+
+
+// toFixed
+
+// let num = 10.3434
+// let result = num.toFixed(4)
+// console.log(result);
+
+
+// let num = 9.520
+// console.log(num.toFixed(1));
+
+
+
+// let price = 45.6189;
+// let fixed = price.toFixed(2); 
+// console.log(fixed);         
+// console.log(typeof fixed);  
+
+// Round 99.9999 to 2 decimal places using toFixed.
+
+
+// let num =  99.9999
+// console.log(num.toFixed(2));   // 100.00
+
+
+// Use toFixed(4) on 5.5 and notice padding.
+
+// let num = 5.5
+// console.log(num.toFixed(4));   5.5000
+
+
+// Convert "45.678" (as string) to number and limit to 1 decimal.
+// let str = "45.678";
+// let num = parseFloat(str)
+// let decimal = num.toFixed(2)
+// console.log(decimal);
+
+
+// =======================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ================================================================================
 
 
@@ -2901,6 +3100,25 @@
 
 // document.getElementById("text").innerHTML = "<b>Bold Text</b>";
 // document.getElementById("text").innerHTML = "<h1>Hello</h1>";
+
+
+
+
+// ==================================================================================
+
+               // JavaScript Date Object
+
+let now = new Date()
+console.log(now);
+
+
+
+
+
+
+
+
+
 
 
 
