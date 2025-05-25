@@ -3179,10 +3179,248 @@
 // }
 // showDate()
 
+// let today = new Date()
+// let dob = new Date("Dec 21 2002")
+
+// let todayYear = today.getFullYear()
+// let dobYear = dob.getFullYear()
+
+// let age = todayYear - dobYear
+// console.log(age);
 
 
 
 
+// =====================================================================================
+// Current Date & Time Display
+// Task: Current date and time ko browser mein display karo.
+// let today = new Date()
+// console.log(today);
+
+
+// Only Date Extract Karo
+// Task: Sirf date (day/month/year) print karo.
+// Output example: 23/05/2025
+
+// let today = new Date()
+// console.log(`Today is ${today.getDate()}/${today.getMonth() + 1}/${today.getFullYear()}`);
+
+
+
+// Only Time Extract Karo
+// Task: Sirf current time show karo in format: HH:MM:SS
+// let today = new Date()
+// console.log(`Time ${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`);
+
+
+
+// Countdown Timer
+// Task: Kisi specific future date (jaise New Year) tak kitna time baqi hai wo countdown show karo.
+// Output example: 100 days 5 hours 30 minutes 10 seconds left
+// function updateCountdown() {
+
+    
+//     let today = new Date()
+//     let eid = new Date("June 08 2025")
+//     // console.log(eid);
+//     let time = eid.getTime() - today.getTime()
+//     // console.log(time);
+//     if(time <= 0){
+//         document.getElementById("countdown").innerText = "Eid ul Adha is here";
+//         clearInterval(interval);
+//         return;
+//     }
+
+
+// let seconds = Math.floor(time / 1000)
+// // console.log(seconds);
+// let minutes = Math.floor(seconds / 60)
+// // console.log(minutes);
+// let hours = Math.floor(minutes / 60)
+// // console.log(hours);
+// let days = Math.floor(hours / 24)
+// // console.log(days);
+// let remainingHours = hours % 24
+// // console.log(remainingHours);
+// let remainingMinutes = minutes % 60
+// // console.log(remainingMinutes);
+// let remainingSeconds = seconds % 60
+// // console.log(remainingSeconds);
+// // console.log(`${days} days ${remainingHours} hours ${remainingMinutes} minutes ${remainingSeconds} seconds left`);
+
+
+// document.getElementById("countdown").innerText =
+// `${days} days ${remainingHours} hours ${remainingMinutes} minutes ${remainingSeconds} seconds left`;
+
+// }
+// updateCountdown();
+
+// setInterval(updateCountdown, 1000);
+
+
+
+
+// Greetings Based on Time
+// Task: Agar time morning hai toh “Good Morning” show karo, afternoon mein “Good Afternoon” etc.
+// Time Ranges:
+// 5 AM - 12 PM: Good Morning
+// 12 PM - 5 PM: Good Afternoon
+// 5 PM - 9 PM: Good Evening
+// 9 PM - 5 AM: Good Night
+
+// let today = new Date()
+// let hours = today.getHours()
+
+// if(hours >= 5 && hours <= 12){
+//     console.log("Good Morning");
+// }else if(hours >= 12 && hours <= 5){
+//     console.log("Good Afternoon");
+// }else if(hours >= 5 && hours <= 9){
+//     console.log("Good Evening");
+// }else{
+//     console.log("Good Night");
+// }
+
+
+
+// Age Calculator
+// Task: User se date of birth lo aur uska age calculate karke show karo.
+
+// let userInput = prompt("Enter Your DOB")
+// let today = new Date()
+// let dob = new Date(userInput)
+// let todayYear = today.getFullYear()
+// // console.log(todayYear);
+// let dobYear = dob.getFullYear()
+// // console.log(dobYear);
+// let age = todayYear - dobYear
+// console.log(age);
+
+
+
+
+
+
+
+// Date Formatter Function
+// Task: Ek function banao jo koi bhi date le aur usko format kare: Monday, 23 May 2025
+
+// function format(){
+//     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+//     let month = ["January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December"];
+
+//     let today = new Date()
+//     let currentDay = days[today.getDay()]
+//     let currentMonth = month[today.getMonth()]
+//     // console.log(currentDay);
+    
+//     console.log(`${currentDay}, ${today.getDate()} ${currentMonth} ${today.getFullYear()}`);
+    
+// }
+// format()
+
+
+
+
+
+
+
+// Days Passed Since a Date
+// Task: Kisi bhi past date se aaj tak kitne din guzray hain, wo calculate karo.
+
+// let today = new Date()
+// let eid = new Date("March 1 2025") 
+// let time = today.getTime() - eid.getTime()
+// // console.log(time);
+// let second = Math.floor(time / 1000)
+// // console.log(second);
+// let minutes = Math.floor(second / 60)
+// let hours = Math.floor(minutes / 60)
+// let day = Math.floor(hours / 24)
+
+// let dayPassed = day 
+// let remainingHours = hours % 24
+// let remainingMinutes = minutes % 60
+// let remainingSeconds = second % 60
+
+
+// console.log(`${dayPassed} days ${remainingHours} hours ${remainingMinutes} minutes ${remainingSeconds} passed`);
+
+
+
+
+
+
+// Weekend Checker
+// Task: User se koi date lo aur check karo kya wo weekend (Saturday ya Sunday) hai?
+
+
+// let today = new Date()
+// let userInput = prompt("Enter any date: ")
+// let day = new Date(userInput).getDay()
+
+// if(day == "0" || day == "6"){
+//     console.log("Weekend");
+// }else{
+//     console.log("Week day");
+// }
+
+
+
+
+// How Many Fridays in a Month
+// Task: Kisi bhi month aur year ke liye check karo us month mein kitne Fridays hain.
+
+// let today = new Date();
+// let year = new Date().getFullYear();
+// let month = new Date().getMonth();
+
+
+// let totalDays = new Date(year, month + 1, 0).getDate()
+// // console.log(totalDays);
+// let fridayCount = 0;
+
+// for(let i = 1; i <= totalDays; i++){
+//     // console.log(i);
+//     let friday = new Date(year, month, i).getDay();
+//     if(friday == 5){
+//         fridayCount++;
+//     }
+    
+// }
+// console.log(fridayCount);
+
+
+
+
+
+
+// Birthday Reminder
+// Task: Ek fixed birthday date lo aur check karo ke wo is saal aaya ya aane wala hai. Aur agar aane wala hai to kitne din baqi hain?
+
+
+// let today = new Date()
+// let birthDayInput = +prompt("Enter your birth date (e.g 21): ");
+// let birthMonthInput = +prompt("Enter your birth date (e.g 1-12): ") - 1;
+// let currentYear = today.getFullYear()
+// let birthday = new Date(currentYear, birthMonthInput, birthDayInput);
+
+// if(birthday < today){
+//     console.log("Your birthday Passed");
+// }else{
+//     let timeDiff = birthday.getTime() - today.getTime()
+//     let second = Math.floor(timeDiff / 1000)
+//     let minutes = Math.floor(second / 60)
+//     let hours = Math.floor(minutes / 60)
+//     let day = Math.floor(hours / 24)
+//     // console.log(day);
+    
+//     let remainingHours = hours % 24
+//     let remainingMinutes = minutes % 60
+//     let remainingSeconds = second % 60
+
+//     console.log(`${day} ${remainingHours} ${remainingMinutes} ${remainingSeconds} left`);
+// }
 
 
 
