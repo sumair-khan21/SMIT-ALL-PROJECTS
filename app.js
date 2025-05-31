@@ -3368,7 +3368,7 @@
 
 
 
-// How Many Fridays in a Month
+// How Many Fridays in a Month;
 // Task: Kisi bhi month aur year ke liye check karo us month mein kitne Fridays hain.
 
 // let today = new Date();
@@ -3376,13 +3376,15 @@
 // let month = new Date().getMonth();
 
 
-// let totalDays = new Date(year, month + 1, 0).getDate()
+// let totalDays = new Date(year, month + 1,0).getDate()
 // // console.log(totalDays);
 // let fridayCount = 0;
 
 // for(let i = 1; i <= totalDays; i++){
 //     // console.log(i);
 //     let friday = new Date(year, month, i).getDay();
+//     // console.log(friday);
+    
 //     if(friday == 5){
 //         fridayCount++;
 //     }
@@ -3423,12 +3425,54 @@
 // }
 
 
+// ============================================================================================
+
+
+                                      // Events: link
+
+// function popup(message) {
+//  alert(message);
+//  }                                    
+
+
+// document.getElementById('dice').addEventListener('click', function(){
+//     let random = Math.floor(Math.random() * 6) + 1;
+//     document.getElementById('image').src = `images/dice${random}.png`
+// })
 
 
 
+// let arr = ['images/dice1.png','images/dice2.png','images/dice3.png','images/dice4.png','images/dice5.png','images/dice6.png']
+
+// let random = Math.floor(Math.random() * 6) + 1;
+
+// document.getElementById('dice').addEventListener('click',function(){
+//     document.getElementById('image').src = arr[random]
+// })
 
 
 
+// document.getElementById('dice').addEventListener('click',function(){
+//     let random = Math.floor(Math.random() * 6) + 1;
+//     document.getElementById('images')
+
+// })
+
+
+// if else condition
+
+let off = document.getElementById('off')
+let on = document.getElementById('on')
+
+off.addEventListener('click',function(){
+    document.getElementById('offBulb').style.display = 'none'
+    document.getElementById('onBulb').style.display = 'block'
+})  
+
+on.addEventListener('click',function(){
+    document.getElementById('offBulb').style.display = 'block'
+    document.getElementById('onBulb').style.display = 'none'
+})
 
 
 
