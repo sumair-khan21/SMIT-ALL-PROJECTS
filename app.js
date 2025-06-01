@@ -3461,21 +3461,45 @@
 
 // if else condition
 
-let off = document.getElementById('off')
-let on = document.getElementById('on')
+// let off = document.getElementById('off')
+// let on = document.getElementById('on')
 
-off.addEventListener('click',function(){
-    document.getElementById('offBulb').style.display = 'none'
-    document.getElementById('onBulb').style.display = 'block'
-})  
+// off.addEventListener('click',function(){
+//     document.getElementById('offBulb').style.display = 'none'
+//     document.getElementById('onBulb').style.display = 'block'
+// })  
 
-on.addEventListener('click',function(){
-    document.getElementById('offBulb').style.display = 'block'
-    document.getElementById('onBulb').style.display = 'none'
+// on.addEventListener('click',function(){
+//     document.getElementById('offBulb').style.display = 'block'
+//     document.getElementById('onBulb').style.display = 'none'
+// })
+
+
+let bulbOn = document.getElementById('bulbOn')
+let bulbOff = document.getElementById('bulbOff')
+let btnOn = document.getElementById('turnOn')
+let btnOff = document.getElementById('turnOff')
+
+btnOn.addEventListener('click', function(){
+    if(bulbOn.hidden){
+        bulbOn.hidden = false;
+        bulbOff.hidden = true;
+
+        btnOn.hidden = true;
+        btnOff.hidden = false;
+    }
 })
 
 
 
+btnOff.addEventListener('click', function(){
+    if(bulbOff.hidden){
+        bulbOn.hidden = true;
+        bulbOff.hidden = false;
 
+        btnOn.hidden = false;
+        btnOff.hidden = true;
+    }
+})
 
 
