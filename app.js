@@ -3475,31 +3475,275 @@
 // })
 
 
-let bulbOn = document.getElementById('bulbOn')
-let bulbOff = document.getElementById('bulbOff')
-let btnOn = document.getElementById('turnOn')
-let btnOff = document.getElementById('turnOff')
+// let bulbOn = document.getElementById('bulbOn')
+// let bulbOff = document.getElementById('bulbOff')
+// let btnOn = document.getElementById('turnOn')
+// let btnOff = document.getElementById('turnOff')
 
-btnOn.addEventListener('click', function(){
-    if(bulbOn.hidden){
-        bulbOn.hidden = false;
-        bulbOff.hidden = true;
+// btnOn.addEventListener('click', function(){
+//     if(bulbOn.hidden){
+//         bulbOn.hidden = false;
+//         bulbOff.hidden = true;
 
-        btnOn.hidden = true;
-        btnOff.hidden = false;
-    }
-})
+//         btnOn.hidden = true;
+//         btnOff.hidden = false;
+//     }
+// })
 
 
 
-btnOff.addEventListener('click', function(){
-    if(bulbOff.hidden){
-        bulbOn.hidden = true;
-        bulbOff.hidden = false;
+// btnOff.addEventListener('click', function(){
+//     if(bulbOff.hidden){
+//         bulbOn.hidden = true;
+//         bulbOff.hidden = false;
 
-        btnOn.hidden = false;
-        btnOff.hidden = true;
-    }
-})
+//         btnOn.hidden = false;
+//         btnOff.hidden = true;
+//     }
+// })
+
+// ==============================================================================
+// Slider 
+
+
+// let prev = document.getElementById('prev')
+// let next = document.getElementById('next')
+
+// let sliderContainer = document.getElementById('slider-container')
+
+// let images = ['images/slider1.jpg','images/slider2.jpg','images/slider3.jpg','images/slider4.jpg','images/slider5.jpg']
+
+// let currentIndex = 0
+
+// prev.addEventListener('click',function(){
+//     if(currentIndex > 0){
+//         currentIndex--
+//     }else{
+//         currentIndex = images.length - 1
+//     }
+//     updateSlider()
+// })
+
+// next.addEventListener('click',function(){
+//     if(currentIndex < images.length - 1){
+//         currentIndex++
+//     }else{
+//         currentIndex = 0
+//     }
+//     updateSlider()
+// })
+
+// function updateSlider(){
+//     sliderContainer.innerHTML = `
+//     <img src="${images[currentIndex]}" alt="" id="slider1">
+//     `
+// }
+
+// updateSlider()      
+
+// ===========================================================================================
+
+//                                     Setting field values
+
+// function setName(){
+//     document.getElementById('name').value = "Sumair Khan";
+// }
+
+
+
+//  function fillCity() {
+//  var cityName;
+//  var zipEntered = document.getElementById("zip").value;
+//  switch (zipEntered) {
+//  case "60608" :
+//  cityName = "Chicago";
+//  break;
+//  case "68114" :
+//  cityName = "Omaha";
+// break;
+// case "53212" :
+// cityName = "Milwaukee";
+// }
+//      document.getElementById("city").value = cityName;
+//      }
+
+
+
+
+    //  Reading and setting paragraph text
+
+
+
+//  function expandLoris() {
+//  var expandedParagraph = `Slow lorises are a group of several species of trepsirrhine primates which
+//     make up the genus Nycticebus. They have a round head, narrow snout, large eyes, and a variety of
+//     distinctive coloration patterns that are species-dependent. The hands and feet of slow lorises have several
+//     adaptations that give them a pincer-like grip and enable them to grasp branches for long periods of time.
+//     Slow lorises have a toxic bite, a rare trait among mammals.`;
+//  document.getElementById("slowLoris").innerHTML = expandedParagraph;
+//  }
+
+
+
+//  function placeAList() {
+//  var listToPlace = "<ol><li>Slow loris</li><li>Fast loris</li><li>Just-right loris</li></ol>";
+//  document.getElementById("lorisList").innerHTML = listToPlace;
+//  }
+    
+
+//  function peekAtContent() {
+//  var whatsThere = document.getElementById("content").innerHTML;
+//  }
+
+
+//  function readText() {
+//     let para = document.getElementById("myPara");
+//     alert(para.textContent);  // yeh text alert box mein show karega
+//   }
+
+
+// swaping image
+
+
+// function changeImage() {
+//     document.getElementById("myImage").src = "/images/on.jpg";
+//   }
+
+
+// ========================================================================================
+
+// Objects
+
+// let student = {
+//     name: "sumair khan",
+//     age: 22,
+//     education: "bachalor"
+
+// }
+// student.name = "ali"
+// console.log(student.name);
+
+// let student = {
+//     name: "sumair khan",
+//     age: 22,
+//     education: "bachalor",
+//     greet: function(){
+//         console.log("Hello " + this.name);
+        
+//     }
+
+// }
+
+// student.greet()
+
+
+// let user = {
+//     "first name": "sumair",
+//     "last name": "khan",
+//     age: 22
+// }
+// console.log(user["first name"]);
+
+
+
+
+// let student = {
+//   name: "Grace",
+//   age: 22,
+//   address: {
+//     city: "Lahore",
+//     country: "Pakistan"
+//   }
+// };
+// console.log(student.address.city);
+
+
+// let students = [
+//   { name: "Grace", age: 22 },
+//   { name: "Ali", age: 23 },
+//   { name: "Sara", age: 21 }
+// ];
+
+
+// // console.log(students[0].age);
+
+// // for(let i = 0; i < students.length; i++){
+// //     console.log(students[i].name + "-" + students[i].age);
+    
+// // }
+
+// students.push({ name: "Zara", age: 24 });
+// console.log(students[0].name);
+
+
+
+
+//                                              TASKS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
