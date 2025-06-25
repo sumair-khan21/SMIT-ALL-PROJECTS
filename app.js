@@ -3682,7 +3682,9 @@
 
 // array of objects
 // local storage
-// 
+// ek ec commerce store banana hay jis mein products ko array of objects mein store karna hai.
+// jis bhi product per click kare wo product local storage mein store ho jaye.or iski complete details show ho jaye.next page per 
+// add to cart banana hy jis mein products ko local storage se uthana hai.or cart page per show karna hai.
 
 
 
