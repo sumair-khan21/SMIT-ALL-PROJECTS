@@ -3681,12 +3681,317 @@
 //                                              TASKS
 
 // array of objects
+
+
+
+
+// 🟢 Basic Level
+// 1️⃣ Ek array banao jisme teen student objects hon: har student ka name aur age ho.
+
+// let std = [
+//     {
+//         name: "amir",
+//         age: 22
+//     },
+//     {
+//         name: "rizwan",
+//         age: 29
+//     },
+//     {
+//         name: "babar azam",
+//         age: 21
+//     }
+// ]
+
+// console.log(std[1].age);
+// for(let i = 0; i < std.length; i++){
+//     console.log(std[i].name);
+// }
+
+
+
+
+
+// 2️⃣ Array ke pehle student ka name console me print karo.
+// Hint: students[0].name
+
+
+// let std = [
+//     {
+//         name: "amir",
+//         age: 22
+//     },
+//     {
+//         name: "rizwan",
+//         age: 29
+//     },
+//     {
+//         name: "babar azam",
+//         age: 21
+//     }
+// ]
+
+// console.log(std[1].age);
+// for(let i = 0; i < std.length; i++){
+//     console.log(std[i].name);
+// }
+
+
+
+
+
+// 3️⃣ Array ke last student ki age change karke 25 kar do.
+
+// let std = [
+//     {
+//         name: "amir",
+//         age: 22
+//     },
+//     {
+//         name: "rizwan",
+//         age: 29
+//     },
+//     {
+//         name: "babar azam",
+//         age: 21
+//     }
+// ]
+
+
+//  std[2].age = 25
+//  console.log(std[2].age);
+ 
+
+
+// 4️⃣ Array me ek naya student add karo jiska name "Sara" aur age 22 ho.
+// let std = [
+//     {
+//         name: "amir",
+//         age: 22
+//     },
+//     {
+//         name: "rizwan",
+//         age: 29
+//     },
+//     {
+//         name: "babar azam",
+//         age: 21
+//     }
+// ]
+
+
+// std.push({name: "sara", age: 11}) 
+// console.log(std);
+
+
+
+// 6️⃣ Array ke har student ka name print karne ke liye loop use karo.
+
+
+
+// let std = [
+//     {
+//         name: "amir",
+//         age: 22
+//     },
+//     {
+//         name: "rizwan",
+//         age: 29
+//     },
+//     {
+//         name: "babar azam",
+//         age: 21
+//     }
+// ]
+
+// console.log(std[1].age);
+// for(let i = 0; i < std.length; i++){
+//     console.log(std[i].name);
+// }
+
+
+
+
+// 7️⃣ Pehle student ka age 1 se increase karo.
+
+
+
+// let std = [
+//     {
+//         name: "amir",
+//         age: 22
+//     },
+//     {
+//         name: "rizwan",
+//         age: 29
+//     },
+//     {
+//         name: "babar azam",
+//         age: 21
+//     }
+// ]
+
+// std[1].age += 1
+// console.log(std[1].age);
+
+
+// 8️⃣ Check karo kya array me koi student ka name "Sara" hai.
+
+// let std = [
+//     {
+//         name: "amir",
+//         age: 22
+//     },
+//     {
+//         name: "sara",
+//         age: 29
+//     },
+//     {
+//         name: "babar azam",
+//         age: 21
+//     }
+// ]
+
+// for(let i = 0; i < std.length; i++){
+//     // console.log(std[i].name);
+//     // if(std[i].name == "sara"){
+//     //     console.log("yes");
+//     //     break
+//     // }else{
+//     //     console.log("no");
+//     //     break
+        
+//     // }
+//     // some method
+//     // if(std.some(student => student.name === "sara")){
+//     //     console.log("yes");
+//     //     break;
+//     // }else{
+//     //     console.log("no");
+//     //     break;
+//     // }
+// }
+
+
+
+//  Advanced Questions
+// 9️⃣ Array ke sab students ki average age find karo.
+// Hint: Loop karke sum nikalo phir divide by length.
+
+// 10️⃣ Ek naya array banao jisme sirf students ke names hon.
+// Hint: map method.
+
+// 11️⃣ Array me se us student ka object delete karo jiska name "Ali" hai.
+// Hint: filter method se naya array banao.
+
+// 12️⃣ Array me se students filter karo jinki age 21 se zyada hai.
+// Hint: filter
+
+// 13️⃣ Sab students ke name uppercase me convert karo.
+// Hint: map + .toUpperCase()
+
+// 15️⃣ Ek function banao jo array of students le aur sirf un students ko return kare jinki age even number hai.
+// Hint: function + filter
+
+// 16️⃣ Array me se pehla student find karo jiska name "Ali" hai.
+// Hint: find method.
+
+
+// 21️⃣ Ek complex array banao jisme students ke saath unke subjects ka bhi array ho (e.g. {name: "Ali", age:20, subjects: ["Math","English"]}).
+// Hint: Nested array.
+
+// 24️⃣ Array me se student find karo jiske subjects me "English" ho.
+// Hint: find + includes
+
+// 27️⃣ Ek function banao jo array of students ko le aur unka average age return kare.
+// Hint: function + reduce
+
+// 28️⃣ Array me se check karo kya sab students ki age 18 se zyada hai.
+// Hint: every
+
+// 29️⃣ Array me se koi student aisa hai kya jiska subjects me "Physics" ho?
+// Hint: some + includes
+
+
+
+
+
+// ==============================================================================
+
+
+
+
+
 // local storage
+
+// setitem
+localStorage.setItem("name", "sumair khan")
+localStorage.setItem("age", 21)
+localStorage.setItem("color", "pink")
+
+
+// getitem
+
+// let user = localStorage.getItem("name")
+// console.log(user);
+
+// remove item
+// localStorage.removeItem("name")
+
+
+// localStorage.clear()
+
+// get by key
+
+// let key = localStorage.key(1)
+// console.log(key);
+
+
+// set store object
+
+// let store = {name: "sumair khan", age: 22, class: "matric"}
+// // console.log(store);
+// localStorage.setItem("user",JSON.stringify(store))
+
+// get object
+
+// let getstd = JSON.parse(localStorage.getItem("user"))
+// console.log(getstd.name);
+// console.log(getstd.age);
+
+
+// store array
+
+// let color = ["red", "green", "yellow", "pink"];
+// localStorage.setItem("color", JSON.stringify(color))
+
+
+// let getcolor = JSON.parse(localStorage.getItem("color"))
+// console.log(getcolor);
+
+
+
+
+
+
+
+
+
+
+
 // ek ec commerce store banana hay jis mein products ko array of objects mein store karna hai.
 // jis bhi product per click kare wo product local storage mein store ho jaye.or iski complete details show ho jaye.next page per 
 // add to cart banana hy jis mein products ko local storage se uthana hai.or cart page per show karna hai.
 // ab krna map, foreach, or filter ye parhna hay
-
+// Try .
+// Await.
+// Aysn.
+// Fetch.
+// Promise.
+// Then.
+// Catch.
+// Call back .
+// Set time out.
 
 
 
