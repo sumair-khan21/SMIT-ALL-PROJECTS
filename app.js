@@ -3993,7 +3993,7 @@ localStorage.setItem("color", "pink")
 // Call back .
 // Set time out.
 
-
+// pori e commerce banani hy like search filter add to cart remove from cart checkout payment
 
 
 
