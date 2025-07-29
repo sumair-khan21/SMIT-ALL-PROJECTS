@@ -3994,6 +3994,7 @@ localStorage.setItem("color", "pink")
 // Set time out.
 
 // pori e commerce banani hy like search filter add to cart remove from cart checkout payment
+// supabase auth and table database
 
 
 
