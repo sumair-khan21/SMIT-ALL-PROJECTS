@@ -4302,12 +4302,107 @@
 // Task 3
 // Ek array prices = [100, 200, 300] hai. forEach() ka use karke har price me 10% tax add karo aur naya array print karo.
 
-let prices = [100, 200, 300]
-
+// let prices = [100, 200, 300]
+// let newPrices = []
+// prices.forEach((ele)=>{
+// let tex = ele + (ele  * 0.10)
+// newPrices.push(tex)
+// })
+// console.log(newPrices);
 
 
 // Task 4
 // Ek array words = ["apple", "banana", "cherry"] hai. forEach() ka use karke har word ko uppercase me print karo.
+// let words = ["apple", "banana", "cherry"]
+// words.forEach((ele)=>{
+//     console.log(ele.toUpperCase());
+    
+// })
+
+
+// ====================================================================================
+
+// Destructuring
+
+// let fruits = ["apple", "mango", "banana"];
+// // let fruit1 = fruits[0]
+// // let fruit2 = fruits[1]
+// let [f1,f2,f3] = fruits
+// // console.log(fruit1,fruit2);
+// console.log(f1,f2,f3);
+
+
+
+// let colors = ["red", "green", "blue"];
+// let [first, , third] = colors
+// console.log(first);
+// console.log(third);
+
+
+// let colors = ["red", "green", "blue"];
+// let [first, , third] = colors;
+
+// console.log(first); // red
+// console.log(third); // blue
+
+
+
+// let numbers = [10];
+// let [num1, num2 =20]= numbers
+// console.log(num1);
+// console.log(num2);
+
+
+// let a = 5, b = 10;
+// [a,b]= [b,a]
+// console.log(a,b);
+
+
+
+// let person = { name: "Ali", age: 25, city: "Karachi" };
+
+// // Normal way
+// // let name = person.name;
+// // let age = person.age;
+
+// let {name,age} = person
+// console.log(name);
+// console.log(age);
+
+
+
+
+// let car = { brand: "Toyota", model: "Corolla" };
+// let {brand: carBrand, model: carModel} = car
+// console.log(carBrand);
+// console.log(carModel);
+
+
+
+
+
+// let user = { name: "Sumair" };
+
+// let { name, age = 18 } = user;
+
+// console.log(name); // Sumair
+// console.log(age);  // 18 (default value)
+
+
+
+ 
+
+// let student = {
+//   name: "Sara",
+//   marks: {
+//     math: 90,
+//     english: 85
+//   }
+// };
+
+// let {marks: {math,english}} = student
+// console.log(math);
+// console.log(english);
 
 
 
@@ -4315,6 +4410,13 @@ let prices = [100, 200, 300]
 
 
 
+
+// function pic({name,age}){
+//       console.log(`Name: ${name}, Age: ${age}`);
+// }
+
+// let userData = { name: "Hassan", age: 30 };
+// console.log(userData);
 
 
 
