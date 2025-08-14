@@ -3925,9 +3925,9 @@
 // local storage
 
 // setitem
-localStorage.setItem("name", "sumair khan")
-localStorage.setItem("age", 21)
-localStorage.setItem("color", "pink")
+// localStorage.setItem("name", "sumair khan")
+// localStorage.setItem("age", 21)
+// localStorage.setItem("color", "pink")
 
 
 // getitem
@@ -3968,6 +3968,365 @@ localStorage.setItem("color", "pink")
 
 // let getcolor = JSON.parse(localStorage.getItem("color"))
 // console.log(getcolor);
+
+
+
+// ========================================================================================
+// map 
+
+
+// let arr1 = [1,2,3,4,5,6,7]
+// // let arr = ["1","2",3]
+// let newArr1 = arr1.map((ele,index,sums)=>{
+//     console.log(ele, index,sums);    
+// })
+
+    // let arr = ["1","2",3]
+    // let newArr = arr.map((ele,index,sums)=>{
+    //     return (ele, index,sums);    
+    // })
+    // console.log(newArr);
+
+// const arr = ["1","2","3","4","5"]
+// let newArr = arr.map((curEle,index,array)=>{
+//        return `the value is ${curEle} Index No ${index} belongs to ${array}`
+//  })
+//  console.log(newArr)
+
+
+
+// Ek array [1, 2, 3, 4] ko map() ka use karke double karo.
+
+// let numbers = [1, 2, 3, 4, 5];
+// let newArr = numbers.map((ele)=>{
+//     return ele * 2
+// })
+// console.log(newArr);
+
+
+// Ek array of strings ko map() se uppercase mein convert karo.
+// let arr = ["apple","mango","peach"]
+// let newArr = arr.map((ele)=>{
+//    let capital =  ele.toUpperCase()
+//    return capital
+// })
+// console.log(newArr);
+
+
+
+
+// Ek object array lo {name: 'Ali', age: 20} jaisa, aur map() ka use karke sirf name ka array banao.
+// let obj = [
+//     {name: 'Ali', age: 20},
+//     {name: 'Ahmed', age: 25},
+//     {name: 'Sara', age: 22}
+// ];
+// let newArr = obj.map((ele)=>{
+//     return ele.name
+// })
+// console.log(newArr);
+
+
+
+// Ek map() likho jo har item ke sath uska index bhi return kare format "value - index".
+
+// let arr = ["apple","mango","peach"]
+// let newArr = arr.map((ele,ind)=>{
+    
+//    let capital =  ele.toUpperCase()
+//    return {capital, ind}
+// })
+// console.log(newArr);
+
+
+
+// ====================================================================================
+
+// Ek array numbers = [2, 5, 8, 11, 4, 9] se sirf 5 se bade numbers filter karo.
+
+// let arr = [2, 5, 8, 11, 4, 9]
+// let newArr = arr.filter((ele)=>{
+//     return ele > 5
+// })
+// console.log(newArr);
+
+
+
+// Ek array words = ["apple", "banana", "kiwi", "mango", "pear"] se sirf wo words filter karo jinki length 5 se zyada ho.
+
+
+// let word = ["apple", "banana", "kiwi", "mango", "pear"]
+// let newArr = word.filter((ele)=>{
+//     return ele.length > 5
+// })
+// console.log(newArr);
+
+
+
+// Ek array of objects:
+// let users = [
+//   { name: "Ali", active: true },
+//   { name: "Sara", active: false },
+//   { name: "Omar", active: true }
+// ]
+// Isme se sirf wo users filter karo jo active hain.
+
+// let newArr = users.filter((ele)=>{
+//     if(ele.active){
+//         console.log(ele.name,ele.active);
+//     }  
+// })
+
+
+
+
+
+
+// Ek array of objects:
+// let products = [
+//   { name: "Laptop", price: 800 },
+//   { name: "Phone", price: 500 },
+//   { name: "Tablet", price: 300 }
+// ]
+// // Sirf wo products filter karo jinka price 500 se kam ya equal ho.
+// let newArr = products.filter((ele)=>{
+//     if(ele.price < 500){
+//         console.log(ele.name);
+//     }
+// })
+
+
+
+
+
+
+// =================================================================================
+// find
+
+// Ek array numbers = [5, 12, 8, 130, 44] hai. find() ka use karke pehla number dhoondo jo 10 se bada ho.
+
+// let numbers = [5, 12, 8, 130, 44]
+// let newArr = numbers.find((ele)=>{
+//     return ele > 10
+// })
+// console.log(newArr);
+
+
+
+
+// Ek array fruits = ["apple", "banana", "mango", "peach"] hai. find() ka use karke pehla fruit dhoondo jo "m" se start hota ho.
+
+// let  fruits = ["apple", "banana", "mango", "peach"]
+// let newArr = fruits.find((ele)=>{
+//     return ele.startsWith("m");
+// })
+// console.log(newArr);
+
+
+
+
+
+
+// Ek array of objects:
+// let students = [
+//   { name: "Ali", score: 45 },
+//   { name: "Sara", score: 75 },
+//   { name: "Omar", score: 60 }
+// ];
+// find() ka use karke pehla student dhoondo jiska score 50 se zyada ho.
+
+// let students = [
+//   { name: "Ali", score: 45 },
+//   { name: "Sara", score: 75 },
+//   { name: "Omar", score: 60 }
+// ];
+
+
+// let newArr = students.find((ele)=>{
+//     return ele.score > 50
+// })
+// console.log(newArr);
+
+
+
+
+
+
+// Ek array of users:
+// let users = [
+//   { id: 1, username: "sumair" },
+//   { id: 2, username: "ahmed" },
+//   { id: 3, username: "hira" }
+// ];
+// // find() ka use karke user dhoondo jiska id 3 ho.
+
+// let newArr = users.find((ele)=>{
+//     return ele.id == 3
+// })
+// console.log(newArr);
+
+
+
+
+
+
+
+
+
+// ====================================================================================
+// reduce
+
+// Ek array nums = [1, 2, 3, 4] ka sum calculate karo reduce() ka use karke.
+
+// let nums = [1, 2, 3, 4]
+// let sum = nums.reduce((ele,num)=>{
+//   return ele + num
+// })
+
+// console.log(sum);
+
+
+
+
+// Ek array words = ["Hello", "World"] ko ek hi string me join karo "Hello World" banane ke liye.
+
+// let words = ["Hello", "World"]
+// let newArr = words.reduce((ele,num)=>{
+//    return `${ele} ${num}`
+// })
+// console.log(newArr);
+
+
+
+
+
+// 5. Ek array of objects:
+// reduce() ka use karke total price nikalna hai.
+// let items = [
+//   { name: "Apple", price: 100 },
+//   { name: "Mango", price: 80 },
+//   { name: "Banana", price: 60 }
+// ];
+
+// let totalPrice = items.reduce((acc, ele) => {
+//     return acc + ele.price; 
+// }, 0); // 0 is starting value for acc
+
+// console.log(totalPrice); // Output: 240
+
+
+
+
+
+
+
+
+// // Ek array:
+// let votes = ["yes", "no", "yes", "yes", "no"];
+// // reduce() ka use karke count karo kitne "yes" aur kitne "no" hain (output object form me ho).
+// let newArr = votes.reduce((ele,acc)=>{
+//     return ele == "yes"
+// },0)
+
+// console.log(newArr);
+
+
+// let votes = ["yes", "no", "yes", "yes", "no"];
+
+// let voteCount = votes.reduce((acc, ele) => {
+//     if (ele === "yes") {
+//         acc.yes++;
+//     } else if (ele === "no") {
+//         acc.no++;
+//     }
+//     return acc;
+// }, { yes: 0, no: 0 }); // initial value object
+
+// console.log(voteCount); // { yes: 3, no: 2 }
+
+
+
+
+// ========================================================================================
+
+// this keyword
+
+// console.log(this);
+
+// let obj = {
+//     name: "Ali",
+//     greet(){
+//         console.log(this.name);
+//     }
+// }
+// obj.greet()
+
+
+
+// function showThis() {
+//   console.log(this);
+// }
+// showThis();
+
+
+
+
+// ============================================================================
+// foreach
+
+// 3️⃣ Practice Tasks
+
+// Task 1
+// Ek array numbers = [1, 2, 3, 4, 5] hai. forEach() ka use karke har number ka square print karo.
+
+// let numbers = [1, 2, 3, 4, 5]
+// numbers.forEach((ele)=>{
+//     console.log(ele * ele);
+     
+// })           
+
+
+
+// Task 2
+// Ek array students = ["Ali", "Sara", "Ahmed"] hai. forEach() ka use karke print karo:
+// Student 1: Ali, Student 2: Sara, Student 3: Ahmed
+
+// let students = ["Ali", "Sara", "Ahmed"]
+// students.forEach((ele)=>{
+//     console.log(ele);
+    
+// })
+
+
+
+// Task 3
+// Ek array prices = [100, 200, 300] hai. forEach() ka use karke har price me 10% tax add karo aur naya array print karo.
+
+let prices = [100, 200, 300]
+
+
+
+// Task 4
+// Ek array words = ["apple", "banana", "cherry"] hai. forEach() ka use karke har word ko uppercase me print karo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
