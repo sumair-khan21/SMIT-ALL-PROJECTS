@@ -4682,6 +4682,137 @@
 // },2000)
 
 
+// ======================================================================================
+// Task 1: Simple Fetch & Log
+// API call karo https://jsonplaceholder.typicode.com/todos/1, async/await use karke response log karo.
+
+// async function fetchApi() {
+//     let data = await fetch('https://jsonplaceholder.typicode.com/todos')
+//     let res = await data.json()
+//     console.log(res);
+// }
+// fetchApi()
+
+
+// Task 2: Error Handling
+// Same API se fetch karo — aur agar network ya response me koi error aaye to try...catch se handle karo (log "Error occurred").
+
+
+// async function fetchApi() {
+//     try {
+//     let data = await fetch('https://jsonplaceholder.typicode.com/todos')
+//     let res = await data.json()
+//     console.log(res);
+//     } catch (error) {
+//         console.log(error);
+//     }
+// }
+// fetchApi()
+
+
+
+
+// Task 3: Sequential Promises
+// Do async tasks define karo (delay(2s) aur delay(1s) returning Promise). Inko sequentially run karo ar logs karo:
+// "First done"
+// then "Second done"
+// function delay(ms) {
+//     return new Promise((resolve) => {
+//         setTimeout(resolve, ms);
+//     });
+// }
+// delay(2000) // 2s wait
+//     .then(() => {
+//         console.log("First done");
+//         return delay(1000); // 1s wait
+//     })
+//     .then(() => {
+//         console.log("Second done");
+//     });
+
+
+
+
+
+
+
+// Task 4: Parallel Using Promise.all
+// 3 URLs hain, async fetch se data lete ho, inko simultaneously fire karo — Promise.all ke sath.
+
+// const urls = [
+//     "https://jsonplaceholder.typicode.com/posts/1",
+//     "https://jsonplaceholder.typicode.com/posts/2",
+//     "https://jsonplaceholder.typicode.com/posts/3"
+// ];
+
+// async function fetchSequential() {
+//     let url1 = await fetch(urls[0]).then(r => r.json())
+//     console.log(url1);
+
+//     let url2 = await fetch(urls[1]).then(r => r.json())
+//     console.log(url2);
+
+//     let url3 = await fetch(urls[2]).then(r => r.json())
+//     console.log(url3);
+// }
+// fetchSequential()
+
+
+// const urls = [
+//     "https://jsonplaceholder.typicode.com/posts/1",
+//     "https://jsonplaceholder.typicode.com/posts/2",
+//     "https://jsonplaceholder.typicode.com/posts/3"
+// ];
+
+// async function fetchParallel() {
+//     const promises = urls.map(url => fetch(url).then(r => r.json()));
+
+//     const results = await Promise.all(promises);
+
+//     console.log(results[0]); // first API result
+//     console.log(results[1]); // second API result
+//     console.log(results[2]); // third API result
+// }
+// fetchParallel();
+
+
+
+
+// Task 5: Dynamic Async Loop
+// Array of URLs lo aur for…of loop me sequentially super clean await coding se data fetch karo aur print karo.
+
+// const urls = [
+//     "https://jsonplaceholder.typicode.com/posts/1",
+//     "https://jsonplaceholder.typicode.com/posts/2",
+//     "https://jsonplaceholder.typicode.com/posts/3"
+// ];
+
+// async function fetchSequentially() {
+//     for (const url of urls) {
+//         const response = await fetch(url);  // wait until this fetch completes
+//         const data = await response.json(); // convert response to JSON
+//         console.log(data.title); // print post title
+//     }
+// }
+
+// fetchSequentially();
+
+
+
+// ================================================================================
+// promises
+
+let promises =  new Promise((resolve,reject)=>{
+     let success = true
+     if(success){
+        resolve("ho gya");
+     }else{
+        reject("Kuch bura ho gaya!");
+        
+     }
+})
+promises.then(values => console.log(values)).catch(error => console.log(error))
+
 
 
 
