@@ -4418,6 +4418,268 @@
 // let userData = { name: "Hassan", age: 30 };
 // console.log(userData);
 
+// =========================================================================================
+
+// spread and rest operator
+
+
+// copy arr
+// let arr = [1,2,3,4]
+// let spread = [...arr]
+// console.log(spread);
+
+
+// marge arr 
+// let arr1 = [1,2,3,4]
+// let arr2 = [1,2,3,4]
+// let newArr = [...arr1, ...arr2]
+// console.log(newArr);
+
+
+
+// marge obj
+// let obj1 = { name: "Ali" };
+// let obj2 = { age: 20 };
+// let marge = { ...obj1, ...obj2}
+// console.log(marge);
+
+
+// shallow copy
+// let original = [10, 20, 30];
+// let copy = [...original]
+
+// copy.unshift(40)
+// console.log(original);
+// console.log(copy);
+
+
+
+// ==============================================================================
+// REST OPERATOR
+
+// ye ab dekho mne arr pass krne ki jaga rest operator pass kr diye 
+// function sum(...numbers){
+//     return numbers.reduce((acc, num)=> acc + num, 0)
+// }
+// console.log(sum(1,2,3,4,5));
+
+
+// arr Destructuring
+// let [first, ...rest] = [10, 20, 30, 40];
+// console.log(first);
+// console.log(rest);
+
+
+// obj Destructuring
+// let person = { names: "Ali", age: 25, city: "Karachi" };
+// let {names, ...otherInfo } = person;
+// console.log(names);
+// console.log(otherInfo);
+
+// Task 1:
+// Ek array [1, 2, 3] aur [4, 5] ko Spread use karke merge karo.
+// let arr1 = [1,2,3,4]
+// let arr2 = [1,2,3,4]
+// let newArr = [...arr1, ...arr2]
+// console.log(newArr);
+
+
+// Task 2:
+// Ek object {name: "Ali"} aur {age: 20} ko Spread use karke ek me combine karo.
+// marge obj
+// let obj1 = { name: "Ali" };
+// let obj2 = { age: 20 };
+// let marge = { ...obj1, ...obj2}
+// console.log(marge);
+
+
+// Task 3:
+// Ek function banao jo Rest operator se multiple arguments lega aur unka sum return karega.
+// function sum(...numbers){
+//     return numbers.reduce((acc,num)=> acc + num, 0)
+// }
+// console.log(sum(1,2,3,4,5));
+
+
+
+// Task 4:
+// Array destructuring karke first element ko alag variable me lo, baaki ko ek alag array me store karo (Rest use karke).
+// let colors = ["pink", "green", "blue", "white"]
+// let [first, ...rest] = colors
+// console.log(first);
+// console.log(rest);
+
+
+
+// Task 5:
+// Ek object ke first property ko alag variable me lo aur baaki properties ko ek object me store karo (Rest use karke).
+
+
+// let person = { names: "Ali", age: 25, city: "Karachi" };
+// let {names, ...sums} = person
+// console.log(names);
+// console.log(sums);
+
+
+
+
+// =====================================================================================
+// Synchronous vs Asynchronous JavaScript
+
+
+// Task 1:
+// Ek program banao jo:
+// Pehle "Downloading..." print kare.
+// 2 seconds baad "Download Complete!" print kare.
+// Fir "Processing File..." print kare.
+
+
+// setTimeout(function show(){
+//     console.log("Downloading...");
+    
+// }, 1000)
+
+
+
+// setTimeout(function show(){
+    
+// console.log("Processing File...");
+    
+// }, 2000)
+
+
+
+// setTimeout(function show(){
+//     console.log("Download Complete");
+    
+// }, 5000)
+
+
+
+
+
+
+// Task 2:
+// Ek function delayMessage banao jo parameter le message ka aur delay ka (seconds), aur delay ke baad message print kare.
+
+// function delayMessage(message,delayInSeconds){
+//     setTimeout(()=>{
+//                 console.log(`hello ${message}`);
+        
+//     }, delayInSeconds * 1000)
+// }
+// delayMessage("Sumair", 2)
+
+
+// Task 3:
+// Synchronous example create karo jisme 3 console.log statements ho, aur ek asynchronous task setTimeout ke saath beech mein ho — output ka order predict karo.
+
+// console.log("Start");
+// setTimeout(()=>{
+//     console.log("Hello world");
+// }, 2000)
+// console.log("end");
+
+
+
+// setinterval tasks
+
+
+// const timer = setInterval(()=>{
+//         console.log("Ye har 2 sec baad aayega.");
+// }, 2000)
+
+// setTimeout(()=>{
+// clearInterval(timer)
+// console.log("stop ho gya");
+
+// }, 6000)
+
+
+
+// Task 1 — Countdown Timer (Reverse)
+
+// Ek number input lo (for example 5) aur setTimeout ka use karke har second me countdown print karo jab tak 0 na ho jaye.
+// Example:
+
+
+// let userInput = +prompt("Enter number")
+// let timeLeft = userInput
+// const timer = setInterval(()=>{
+//      if(timeLeft > 0){
+//         console.log(timeLeft);
+//         timeLeft--
+//      }else{
+//         clearInterval(timer)
+//         console.log("go");  
+//      }
+// },1000)
+
+
+
+
+// Task 2 — Message Sequence
+// 3 alag-alag messages ko different time delays ke saath print karo:
+// Hello → 1 second baad
+// How are you? → 3 second baad
+// Bye! → 5 second baad
+
+// setTimeout(()=>{
+//     console.log("Hello");
+// }, 1000)
+
+// setTimeout(()=>{
+//     console.log("How are you");
+// }, 3000)
+
+
+// setTimeout(()=>{
+//     console.log("Bye");
+// }, 5000)
+
+
+
+
+
+// Task 1 — Auto Stop Clock
+// Har 1 second me current time print karo, lekin 10 second ke baad stop ho jaye.
+
+// let curTime = new Date
+// console.log(curTime.getHours(), curTime.getMinutes(), curTime.getSeconds());
+
+
+// console.log(`${hours}:${minutes}:${seconds}`);
+
+// const timer = setInterval(() => {
+//     let now = new Date(); 
+//     let hours = now.getHours();
+//     let minutes = now.getMinutes();
+//     let seconds = now.getSeconds();
+//     console.log(`${hours}:${minutes}:${seconds}`);
+// }, 1000);
+
+// setTimeout(() => {
+//     clearInterval(timer);
+// }, 10000);
+
+
+
+// Har 2 second me ek multiplication table ka next line print karo (for example table of 5), jab tak 10 lines print na ho jaye.
+
+
+// let table = 5
+// let lines = 1
+
+
+// const timer = setInterval(()=>{
+//     console.log(`${table} * ${lines} = ${table * lines}`);
+//     lines++;
+
+//     if(lines > 10){
+//         clearInterval(timer)
+//     }
+    
+// },2000)
 
 
 
@@ -4440,6 +4702,19 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+// Synchronous ASynchronous
 // ek ec commerce store banana hay jis mein products ko array of objects mein store karna hai.
 // jis bhi product per click kare wo product local storage mein store ho jaye.or iski complete details show ho jaye.next page per 
 // add to cart banana hy jis mein products ko local storage se uthana hai.or cart page per show karna hai.
