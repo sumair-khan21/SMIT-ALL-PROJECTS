@@ -4802,34 +4802,287 @@
 // ================================================================================
 // promises
 
-let promises =  new Promise((resolve,reject)=>{
-     let success = true
-     if(success){
-        resolve("ho gya");
-     }else{
-        reject("Kuch bura ho gaya!");
+// let promises =  new Promise((resolve,reject)=>{
+//      let success = true
+//      if(success){
+//         resolve("ho gya");
+//      }else{
+//         reject("Kuch bura ho gaya!");
         
-     }
-})
-promises.then(values => console.log(values)).catch(error => console.log(error))
+//      }
+// })
+// promises.then(values => console.log(values)).catch(error => console.log(error))
+
+
+
+// let p = new Promise((resolve,reject)=>{
+//     let success = false
+//     if(success){
+//         resolve("promise resolve ho gya");
+//     }else{
+//         reject("promise reject")
+//     }
+// })
+// .then((res)=> console.log(res)).catch((err)=> console.log(err))
+
+
+
+
+// let p = new Promise((resolve,reject)=>{
+//     let success = false
+//     if(success){
+//         resolve("promise resolve ho gya");
+//     }else{
+//         reject("promise reject")
+//     }
+// })
+// .then((res)=> console.log(res)).catch((err)=> console.log(err)).finally(()=> console.log("promise end"))
+
+
+//  Advanced Methods
+// promise all
+
+// let p1 = Promise.resolve("1st done")
+// let p2 = Promise.resolve("2st done")
+// let p3 = Promise.resolve("3st done")
+
+// Promise.all([p1,p2,p3])
+// .then((res)=> console.log(res)).catch((err)=> console.log(err))
+
+
+// let p1 = new Promise((res)=> setTimeout(()=> res("1st done"),3000))
+// let p2 = new Promise((res)=> setTimeout(()=> res("2st done"),1000))
+// let p3 = new Promise((res)=> setTimeout(()=> res("3st done"),2000))
+
+// Promise.race([p1,p2,p3])
+// .then((result)=> console.log(result)
+// )
+
+
+
+
+// Task 1: delay(ms) function banao jo Promises use karke ms milliseconds baad resolve ho.
+//  delay(2000).then(() => console.log("2 seconds ho gaya"));
+
+// let p = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve("hello world");
+//     }, 2000);
+// })
+// .then((res)=> console.log(res)).catch((err)=> console.log(err))
 
 
 
 
 
+// Task 2: Promise banake 50% success aur 50% failure simulate karo (resolve or reject randomly).
+
+
+// let p = new Promise((resolve,reject)=>{
+//     let success = Math.random() > 0.5
+//     if(success){
+//         resolve("promise resolve ho gya");
+//     }else{
+//         reject("promise reject")
+//     }
+// })
+// .then((res)=> console.log(res)).catch((err)=> console.log(err)).finally(()=> console.log("promise end"))
+
+
+
+
+// Task 3: 3 Promises parallel chalakar Promise.all() se result print karo, agar koi fail ho to .catch() use karo.
+
+// let p1 = Promise.resolve("1st done")
+// let p2 = Promise.resolve("2st done")
+// let p3 = Promise.resolve("3st done")
+// Promise.all([p1,p2,p3])
+// .then((res)=> console.log(res)).catch((err)=> console.log(err))
+
+
+
+// Task 4: Sequential chaining— promise1().then(...) fir promise2() call karo.
+
+// function promise1() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve("Promise 1 done")
+//         }, 1000);
+//     })
+// }
+
+// function promise2() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve("promise 2 done")
+//         }, 1500);
+//     })
+// }
+
+// promise1().then((res)=> {
+//     console.log(res); 
+//     return promise2()
+// }
+// ).then((res2)=> {
+//     console.log(res2);
+// }
+// ).catch((err)=> console.log(err)
+// )
 
 
 
 
 
+// Task 5: Promise.race() example banao jisme jo Promise sabse pehle resolve ya reject ho, usko handle karo.
+
+// let p1 = Promise.resolve("1st done")
+// let p2 = Promise.resolve("2st done")
+// let p3 = Promise.reject("3st done")
+// Promise.race([p1,p2,p3])
+// .then((res)=>console.log(res)).catch((err)=>console.log(err))
 
 
 
 
 
+// Task 6: 3 promises banao (2 resolve, 1 reject) aur Promise.all use karo → dekho kya hota hai.
+
+// let p1 = new Promise((res)=> setTimeout(()=> res("1st done"),3000))
+// let p2 = new Promise((res)=> setTimeout(()=> res("2st done"),1000))
+// let p3 = new Promise((res)=> setTimeout(()=> res("3st done"),2000))
+
+// Promise.all([p1,p2,p3])
+// .then((result)=> console.log(result)
+// )
 
 
 
+// Task 7: 3 promises banao different timeouts ke sath aur Promise.race use karo → pehle wala ka result console me dikhao.
+
+// let p1 = new Promise((res)=> setTimeout(()=> res("1st done"),3000))
+// let p2 = new Promise((res)=> setTimeout(()=> res("2st done"),1000))
+// let p3 = new Promise((res)=> setTimeout(()=> res("3st done"),2000))
+
+// Promise.race([p1,p2,p3])
+// .then((result)=> console.log(result)
+// )
+// ==========================================================================================
+
+// try catch 
+
+    // let x = 10 + y
+    // console.log(x);
+    
+
+// try {
+//     let x = 10 + y
+//     console.log("code chala");
+// } catch (error) {
+//     console.log("error mila", error.message);
+// }
+
+
+// let jsonData = `{"name":"Sumair"}`
+// try {
+//     const user = JSON.parse(jsonData)
+//     console.log("User name", user.age);
+// } catch (error) {
+//     console.log(error.message);
+// }
+
+
+// try {
+//   console.log("API call kar raha ho...");
+//   throw new Error("Network fail ho gaya");
+// } catch (error) {
+//   console.log("Catch me error:", error.message);
+// } finally {
+//   console.log("Finally: API call end ho gayi (success ya fail dono me chalega)");
+// }
+
+
+
+// Task 1
+// Ek code likho jisme divide by zero check karo. Agar koi number 0 se divide ho raha ho to error throw karo aur catch me handle karo.
+
+
+// try {
+//     let divide = 10/0
+//     throw new Error("divide failed")
+// } catch (error) {
+//     console.log("error mila", error.message);
+    
+// }
+
+
+// try {
+//   let numerator = 10;
+//   let denominator = 0;
+
+//   if (denominator === 0) {
+//     throw new Error("Divide by zero is not allowed!");
+//   }
+
+//   let result = numerator / denominator;
+//   console.log("Result:", result);
+
+// } catch (error) {
+//   console.log("Error mila:", error.message);
+// }
+
+
+
+
+
+// Task 2
+// Ek function parseUserData(json) banao jo JSON string le aur usko parse kare. Agar galat JSON ho to error catch karke "Invalid JSON" print karo.
+
+
+// function parseUserData(json){
+//     try {
+//    let jsonData = JSON.parse(json)
+//    console.log("Data pass", jsonData);
+//     } catch (error) {
+//         console.log("error mila", error.message);
+//     }
+// }
+
+
+// // parseUserData(`{"name":"Sumair"}`)
+// parseUserData(`{name:"Sumair"}`)
+
+
+
+// Task 3
+// API call simulate karo (Promise + setTimeout use karke). Agar success ho to "Data received" print karo, agar fail ho to error catch karke "API failed" print karo, aur finally me "Request finished" print karo.
+
+// async function fakeApiCall() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             let success = Math.random() > 0.5
+//             if (success) {
+//                 resolve("data received")
+//             }else{
+//                 reject("api failed")
+//             }
+//         }, 2000);
+//     })
+// }
+
+// async function apiCall() {
+//     try {
+//         let data = await fakeApiCall();
+//         console.log(data);
+        
+//     } catch (error) {
+//         console.log("error message", error.message);
+//     } 
+//     // finally{
+//     //     console.log("request finished");
+        
+//     // }   
+// }
+// apiCall()
 
 
 
@@ -4849,16 +5102,6 @@ promises.then(values => console.log(values)).catch(error => console.log(error))
 // ek ec commerce store banana hay jis mein products ko array of objects mein store karna hai.
 // jis bhi product per click kare wo product local storage mein store ho jaye.or iski complete details show ho jaye.next page per 
 // add to cart banana hy jis mein products ko local storage se uthana hai.or cart page per show karna hai.
-// ab krna map, foreach, or filter ye parhna hay
-// Try .
-// Await.
-// Aysn.
-// Fetch.
-// Promise.
-// Then.
-// Catch.
-// Call back .
-// Set time out.
 
 // pori e commerce banani hy like search filter add to cart remove from cart checkout payment
 // supabase auth and table database
