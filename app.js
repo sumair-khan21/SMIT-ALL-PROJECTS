@@ -1,3 +1,6 @@
+import { client } from "./confg.js";
+// console.log(client);
+
 // let name = prompt("Apna naam batao:");
 // // console.log("Hello, " + name + "!");
 // // document.write("Hello, " + name + "!")
@@ -13,17 +16,15 @@
 // let name = +prompt("Enter your name");
 // console.log("Welcome " + name + "!")
 
-
 //  var question = "Your species?";
 //  var defaultAnswer = "human";
 // var spec = prompt("Your species?", "human");
 //  var spec = prompt(question, defaultAnswer);
 //  console.log(spec);
- 
 
 // ------------------------------------------------------------------
 
-// atm machine 
+// atm machine
 
 // let pin = prompt("Enter your Pin!");
 // let deposite = ""
@@ -62,7 +63,7 @@
 
 // ---------------------------------------------------
 
-// positive  and negative tasks 
+// positive  and negative tasks
 
 // let number = +prompt("Enter Any Number")
 // if(number > 0){
@@ -76,7 +77,7 @@
 
 // ------------------------------------------------------------
 
-// even and odd 
+// even and odd
 
 // let number = +prompt("Enter Any Number")
 // if(isNaN(number)){
@@ -86,8 +87,6 @@
 // }else{
 //     alert(`${number} is odd number`)
 // }
-
-
 
 // ---------------------------------------------------------------------
 
@@ -123,7 +122,7 @@
 // let age = +prompt("Enter your Age");
 // if(isNaN(age) || age < 0){
 // alert("Invalid Input")
-// }else{   
+// }else{
 //     if(age <= 12){
 //         alert("Child")
 //     }else if( age >= 13 && age <= 19 ){
@@ -135,11 +134,8 @@
 //     }else{
 //         alert("Invalid Input")
 //     }
-    
+
 // }
-
-
-
 
 // 2. Even or Odd Number
 // Task:
@@ -148,7 +144,6 @@
 // • Agar number ko 2 se divide karne par remainder 0 aaye, toh woh even hai.
 // • Agar remainder 1 aaye, toh woh odd hai.
 // • Agar user ne invalid ya non-numeric input diya, toh error message show karein.
-
 
 // let num = +prompt("Enter any number");
 // if(isNaN(num)){
@@ -160,7 +155,6 @@
 //         alert("Odd Number")
 //     }
 // }
-
 
 // 3. Positive, Negative, or Zero
 // Task:
@@ -184,7 +178,6 @@
 //     }
 // }
 
-
 // 4. Vowel or Consonant Checker
 // Task:
 // User se ek letter input lena hai aur batana hai ke woh vowel hai ya consonant.
@@ -194,10 +187,9 @@
 
 // • Agar user ne koi number ya special character diya, toh "Invalid Input" show karein.
 
-
 // let letter = prompt("Enter vowel or consonant");
 // if(letter.length === 1 && ((letter >="a" && letter <= "z") || (letter >= "A" && letter <= "Z"))){
-    
+
 // if(letter == "a" || letter == "e" || letter == "i" || letter == "o" || letter == "u" ||
 //     letter == "A" || letter == "E" || letter == "I" || letter == "O" || letter == "U"
 // ){
@@ -209,7 +201,6 @@
 // }else{
 //     alert("Error")
 // }
-
 
 // 5. Simple Calculator
 // Task:
@@ -237,7 +228,6 @@
 //     alert(`Your division is ${num1 / num2}`)
 // }
 
-
 // 6. Leap Year Checker
 // Task:
 // User se year input lena hai aur batana hai ke woh leap year hai ya nahi.
@@ -259,8 +249,6 @@
 // } else {
 //     alert("Not a Leap Year");
 // }
-
-
 
 // 7. Temperature Checker
 // Task:
@@ -286,7 +274,6 @@
 //         alert("It cold")
 //     }
 // }
-
 
 // 8. Grade Calculator
 // Task:
@@ -322,7 +309,6 @@
 //     }
 // }
 
-
 // 9. Largest of Three Numbers
 // Task:
 // User se teen numbers input lena hai aur batana hai ke inme se sabse bara number kaunsa hai.
@@ -340,7 +326,7 @@
 
 // if (isNaN(firstNum) || isNaN(secondNum) || isNaN(thirdNum)) {
 //     alert("Invalid Number");
-// } else {   
+// } else {
 //     if (firstNum > secondNum && firstNum > thirdNum) {
 //         alert(`Largest number is ${firstNum}`);
 //     } else if (secondNum > firstNum && secondNum > thirdNum) {
@@ -351,8 +337,6 @@
 //         alert("All numbers are equal");
 //     }
 // }
-
-
 
 // 10. Login System
 // Task:
@@ -366,13 +350,11 @@
 // • Username: admin, Password: 12345 → "Login Successful"
 // • Username: admin, Password: 00000 → "Incorrect Credentials"
 
-
 // let userName = prompt("Enter User Name")
 // let password = prompt("Enter password")
 
-
 // if(userName == "" || password == ""){
-    
+
 //     alert("Please enter all details")
 // }else{
 //     if(userName == "admin" && password == 12345){
@@ -380,10 +362,8 @@
 //     }else{
 //         alert("Incorrect Credentials")
 //     }
-    
+
 // }
-
-
 
 // -------------------------------------------------------------
 
@@ -396,7 +376,6 @@
 // Agr 20°C se 30°C ke darmiyan ho to "The weather is nice!" print kro.
 // Warna "It's cold outside!" print kro
 
-
 // let temp = +prompt('Enter Temp')
 // if(temp > 30){
 //     alert('It hot outside!')
@@ -405,8 +384,6 @@
 // }else{
 //     alert('It cold outside!')
 // }
-
-
 
 // ----------------------------------------
 
@@ -417,12 +394,10 @@
 //     console.log(`Today is off`);
 // }else{
 //     console.log(`Today is workig day!`);
-    
+
 // }
 
 // --------------------------------------------------------------------------------------
-
-
 
 //                      ARRAY
 
@@ -462,7 +437,7 @@
 // // console.log(education.length);
 // for(let i = 0; i < education.length; i++){
 //     console.log(education[i]);
-    
+
 // }
 
 // let stdName = ["John","alex","mike"]
@@ -478,8 +453,6 @@
 //         `
 //     )
 // }
-
-
 
 // Initialize colors array
 // let colors = ["Red", "Green", "Blue", "Yellow"];
@@ -519,11 +492,9 @@
 // colors.splice(indexDelete, deleteCount);
 // document.write("<b>After deleting " + deleteCount + " color(s) from index " + indexDelete + ":</b> " + colors.join(", ") + "<br><br>");
 
-
-
 // ------------------------------------------------------------------------
 
-                    // ARRAY
+// ARRAY
 
 // Basic Tasks (Push, Pop, Shift, Unshift)
 // Ek empty array banao.
@@ -534,7 +505,6 @@
 // arr.push("banana","mango","apple","grape")
 // console.log(arr);
 
-
 // Pop Task:
 
 // Pehle ek array create karo jisme 4 cities ke naam hon.
@@ -543,7 +513,6 @@
 // let city = ["karachi","lahore","islamabad","multan"]
 // city.pop()
 // console.log(city);
-
 
 // Unshift Task:
 
@@ -554,7 +523,6 @@
 // arr.unshift(0)
 // console.log(arr);
 
-
 // Shift Task:
 
 // Ek array banao jisme 5 colors hon.
@@ -563,7 +531,6 @@
 // let colors = ["red","green","blue","yellow","purple"]
 // colors.shift()
 // console.log(colors);
-
 
 // ------------------------------------------------------------------------
 
@@ -634,13 +601,10 @@
 // Phir usi position par 25, 35 insert karo.
 // Original array change hona chahiye.
 
-
 // let arr = [10, 20, 30, 40, 50];
 // let newArr = arr.splice(2,1,25,35)
 // console.log(newArr);
 // console.log(arr);
-
-
 
 // Extract Last N Elements (Using Slice)
 // Ek array [5, 10, 15, 20, 25, 30] lo.
@@ -670,10 +634,9 @@
 //         console.log(num)
 //  }
 
-// for (let i = 0; i < 10; i++) { 
-//     console.log("Hello"); 
+// for (let i = 0; i < 10; i++) {
+//     console.log("Hello");
 // }
-
 
 // for (let i = 1; i <= 5; i++) {
 //     console.log(i);
@@ -683,18 +646,16 @@
 //     console.log("Loop Run", i);
 //   }
 
-
 // for (let i = 5; i >= 1; i--) {
 //     console.log(i);
 //   }
-  
+
 // print table of any number
 // let tableOf = +prompt("enter any number");
 // for(let x=1; x <=10; x++){
-        
+
 //            console.log(`${tableOf} * ${x} = ${tableOf * x} `);
 //     }
-  
 
 // let myName = "Sumair";
 // console.log(myName);
@@ -704,7 +665,6 @@
 // console.log(myName);
 // console.log(myName);
 // console.log(myName);
-
 
 // print hello world 10 times
 // for(let i = 0; i < 10; i++){
@@ -721,7 +681,7 @@
 //     console.log(i);
 // }
 
-// print 100 to 1  
+// print 100 to 1
 // for(let i = 100; i >= 1; i--){
 //     console.log(i);
 // }
@@ -759,7 +719,6 @@
 //     console.log(i * i * i);
 // }
 
-
 // let n = +prompt("Enter any number")
 // for(let i = n; i >= 1; i--){
 //     console.log(i);
@@ -768,8 +727,6 @@
 // for(let i = 1; i <= 10; i++){
 //     console.log(i * i);
 // }
-
-
 
 // let num = prompt("number")
 // let num1 = prompt("number")
@@ -787,20 +744,17 @@
 //     console.log(colors[i]);
 // }
 
-
 // Task 11: Ek array ke elements ko reverse order mein print karo
 // let colors = ["Red", "Blue", "Green", "Yellow", "Purple"];
 // for (let i = colors.length - 1; i >= 0; i--) {
 //     console.log(colors[i]);
 // }
 
-
 // let sum = 0;
 // for (let i = 1; i <= 10; i++) {
 //     sum += i;
 // }
 // console.log("Total Sum:", sum);
-
 
 // ------------------------------------------------------------------------
 
@@ -852,11 +806,9 @@
 //     console.log(arr[i]);
 // }
 
-
 // for(let i = arr.length -1; i >= 0; i--){
 //     console.log(arr[i]);
 // }
-
 
 // arr.length - 1 = 3 - 1 = 2 → (i = 2, arr[2] = "grapes")
 // i = 1 → (arr[1] = "banana")
@@ -872,8 +824,8 @@
 //     }
 // }
 
-// for (let i = 1; i <= 5; i++) {  
-//     for (let j = 1; j <= 10; j++) {  
+// for (let i = 1; i <= 5; i++) {
+//     for (let j = 1; j <= 10; j++) {
 //         console.log(`${i} x ${j} = ${i * j}`);
 //     }
 //     console.log("------------"); // Separator
@@ -888,8 +840,6 @@
 //     console.log(row);
 // }
 
-
-
 // let n = 5;
 // for (let i = 1; i <= n; i++) {
 //     let row = "";
@@ -899,30 +849,24 @@
 //     console.log(row);
 // }
 
-
-
 // for(let i = 1; i <= 3; i++){
 //     console.log(`outer iteration ${i}`);
 //     for(let i = 1; i <=2; i++){
 //         console.log(`inner iteration ${i}`);
 //     }
-    
-// }
 
+// }
 
 // Task #1:
 // Ek nested loop likho jo ek 3x3 grid print kare.
-
-
 
 // for(let i = 1; i <= 10; i++){ //outer loop row
 //     let row = " "     // har row k liye eik empty string
 // for(let j = 1; j <= 10; j++){ //inner loop column
 //     row += j + " ";
-// }   
-// console.log(row); 
 // }
-
+// console.log(row);
+// }
 
 // Task #2:
 // Ek nested loop likho jo ek 5x5 star pattern print kare.
@@ -948,9 +892,8 @@
 //         row += j + " "
 //     }
 //     console.log(row);
-    
-// }
 
+// }
 
 // var firstNames = ["BlueRay ", "Upchuck ", "Lojack ", "Gizmo ", "Do-Rag "];
 // var lastNames = ["Zzz", "Burp", "Dogbone", "Droop"];
@@ -962,7 +905,6 @@
 //     }
 // }
 // console.log(fullName);
-
 
 // Task 1: Square Pattern Print Karo
 // Ek square pattern print karna hai nested for loop ka use karke.
@@ -1022,12 +964,11 @@
 // for(let i = 2; i <=5; i++){
 //    for(let j = 1; j <= 10; j++){
 //     console.log(`${j} * ${i} = ${i * j}`);
-    
+
 //    }
 //    console.log("======================");
-   
-// }
 
+// }
 
 // ----------------------------------------------------------------
 
@@ -1040,14 +981,13 @@
 //     // console.log(arr[i]);
 //     if(arr[i] % 2 == 0){
 //         console.log(`Even number ${arr[i]}`);
-        
+
 //     }else{
 //         // console.log(`odd number ${arr[i]}`);
-        
-//     }
-    
-// }
 
+//     }
+
+// }
 
 // Task 2: Count Even and Odd Numbers
 // Task: Given an array of integers, count how many numbers are even and how many are odd.
@@ -1067,7 +1007,6 @@
 // console.log(`Even Number ${evenNum.length}`);
 // console.log(`Odd Number ${oddNum.length}`);
 
-
 // Task 3: Sum of Even Numbers
 // Task: Find the sum of all even numbers in the array.
 
@@ -1081,10 +1020,8 @@
 
 // console.log("sum " + sum);
 
-
 // Task 4: Find the Maximum and Minimum Numbers
 // Task: Find the largest and smallest number in the array.
-
 
 // let arr =  [1,2,3,4,5,6,7,8,9,10,-2,20]
 // arr = [1, 2, 3, 4, 5, -2, 20]
@@ -1102,23 +1039,19 @@
 // console.log("Max Num in the array is " + max);
 // console.log("Min Num in the array is " + min);
 
-
 // Task 5: Reverse the Array
 // Task: Reverse the elements of an array without using built-in reverse functions.
-
 
 // let arr =  [1,2,3,4,5,6,7,8,9,10]
 
 // for(let i = arr.length -1; i >= 0; i--){
 //     console.log(arr[i]);
-    
-// }
 
+// }
 
 // Task 6: Check if a Number Exists in the Array
 // Task: Given a number, check if it exists in the array and print a message indicating whether
 // it’s found or not.
-
 
 // let arr =  [1,2,3,4,5,6,7,8,9,10]
 // let check = prompt("enter number")
@@ -1135,12 +1068,10 @@
 //     console.log("not found");
 // }
 
-
-
 // Task 7: Remove All Negative Numbers
 // Task: Given an array that contains both positive and negative numbers, remove all negative
 // numbers from the array.
-      
+
 // let arr =  [1,2,3,4,5,6,7,8,9,10,-1,-2,-3,-4,-5,-6,-7]
 // let positive = []
 
@@ -1148,17 +1079,14 @@
 //     if(arr[i] >= 0){
 //         positive.push(arr[i])
 //         // console.log(arr[i]);
-        
+
 //     }
 // }
 // console.log(positive);
 
-
-
 // Task 8: Student Attendance
 // Task: Ek array mein students ki attendance ko track karo (1 for present, 0 for absent). Count
 // karo kitne students present hain aur kitne absent hain.
-
 
 // let arr = [1,0,1,0,1,0,1,0,1,0,1,1,1]
 // let present = [];
@@ -1169,14 +1097,12 @@
 //        present.push(arr[i])
 //     }
 //     if(arr[i] == 0){
-//         absent.push(arr[i]) 
+//         absent.push(arr[i])
 //     }
 // }
 
 // console.log("present "+ present.length);
 // console.log("absent "+absent.length);
-
-
 
 // let arr = [1,0,1,0,1,0,1,0,1,0,1,1,1]
 // let preCount = 0;
@@ -1192,24 +1118,20 @@
 // console.log(preCount);
 // console.log(absCount);
 
-
-
 // =====================================================================================
 
 // postfix prefix
 
-//pre-increment  
-// ++num 
-//post increment 
-// num++ 
-
+//pre-increment
+// ++num
+//post increment
+// num++
 
 // let a = 10
 // let b = ++a
 // let b = a--
 
 // console.log(b);
-
 
 // let a = 10;
 // let b = a--  //10
@@ -1219,21 +1141,12 @@
 // console.log(b);  //  10
 // console.log(c);  //  10
 
-
-
 // let a = 5;
 // let b = 10;
-// //        10  + 9   +  6  - 6   + 8 
+// //        10  + 9   +  6  - 6   + 8
 // let ans = b-- + b-- + ++a - a-- + b--
 
-
 // console.log(ans);
-
-
-
-
-
-
 
 // let a = 10;
 // let b = a++;
@@ -1243,7 +1156,6 @@
 // console.log(b); // 10
 // console.log(c); // 12
 
-
 // let a = 1;
 // let b = 2;
 
@@ -1252,11 +1164,8 @@
 
 // console.log(c);
 
-
-
 // var totalCost = 1 + 3 * 4;
 // console.log(totalCost);
-
 
 // var totalCost = 1 + (3 * 4);
 // console.log(totalCost);
@@ -1270,7 +1179,6 @@
 // let myName = "Sumair Khan"
 // console.log("Hello " + myName);
 
-
 // alert("2 plus 2 = " + 2 + 2 );
 
 // let myName = prompt("Enter your name!")
@@ -1280,7 +1188,6 @@
 //  var defaultAnswer = "human";
 //  var spec = prompt(question, defaultAnswer);
 //  console.log(spec);
- 
 
 // let num1 = Number(prompt("Enter a first num"))
 // let num2 = Number(prompt("Enter a Second num"))
@@ -1289,25 +1196,21 @@
 
 // console.log(ans);
 
-
-
 // let city = prompt("Enter your city")
 // if(city == "karachi"){
 //     console.log("Correct Answer");
 // }else{
 //     console.log("Wrong Answer");
-    
-// }
 
+// }
 
 // let age = prompt("Enter your age")
 // if(age >= 18){
 //  console.log("Eligible for vote");
 // }else{
 //     console.log("Not Eligible for vote");
-    
-// }
 
+// }
 
 // let a =  10;
 // let b = 10;
@@ -1327,7 +1230,6 @@
 // else {
 //      alert("Wrong answer");
 // }
-    
 
 // let marks =  55;
 // if(marks >= 90){
@@ -1350,7 +1252,6 @@
 // console.log(a < b || a > b); //true false
 // console.log(a < b || a > b); //true false
 
-
 // let email = prompt("Enter Your Email");
 // let password = +prompt("Enter your Password");
 
@@ -1359,7 +1260,7 @@
 // }else{
 //     console.log("Incorrect Email or Password");
 // }
-    //  index    0         1        2      3      4       5
+//  index    0         1        2      3      4       5
 // let colors = ["green", "yellow", "pink","blue","purple"]
 // console.log(colors[0]);
 // colors.push("black")
@@ -1372,7 +1273,6 @@
 // let newColors = colors.slice(-4)
 // console.log(newColors);
 
-
 // console.log("Hello world");
 // console.log("Hello world");
 // console.log("Hello world");
@@ -1383,7 +1283,6 @@
 // console.log("Hello world");
 // console.log("Hello world");
 // console.log("Hello world");
-
 
 // for(let i = 1; i <= 100; i++){
 // console.log("Hello world");
@@ -1402,7 +1301,6 @@
 //     console.log(colors[i]);
 // }
 
-
 // let nums = [10,20,30,40,50]
 // let findNum = 25;
 // let found = false;
@@ -1413,28 +1311,24 @@
 //         found = true;
 //         break;
 //     }
-    
+
 // }
 // if(found){
 //     console.log("Your Number is Found");
 // }else{
 //     console.log("Not Found");
-    
+
 // }
-
-
 
 // for(let i = 1; i <= 3; i++){
 //     console.log("Outer loop", i);
 
 //     for(let i = 1; i <=4; i++){
 //         console.log("Inner Loop",i);
-        
+
 //     }
-    
+
 // }
-
-
 
 // var firstNames = ["BlueRay ", "Upchuck ", "Lojack ", "Gizmo ", "Do-Rag "];
 //  var lastNames = ["Zzz", "Burp", "Dogbone", "Droop"];
@@ -1443,7 +1337,6 @@
 //  for (var j = 0; j < lastNames.length; j++) {
 //  fullNames.push(firstNames[i] + lastNames[j]);
 
- 
 // }
 
 // }
@@ -1480,8 +1373,6 @@
 //     console.log("Invalid Input");
 // }
 
-
-
 // 2. Even or Odd Number
 // Task:
 // User se ek number input lena hai aur check karna hai ke woh even hai ya odd.
@@ -1502,7 +1393,6 @@
 //     console.log("Invalid Input");
 // }
 
-
 // 3. Positive, Negative, or Zero
 // Task:
 // User se ek number input lena hai aur batana hai ke woh positive, negative ya zero hai.
@@ -1511,22 +1401,20 @@
 // • Agar number 0 se chhota hai, toh woh negative hai.
 // • Agar number 0 ke barabar hai, toh woh zero hai.
 
-
 // let userInput = +prompt("Enter any nuumber")
 
 // if(!isNaN(userInput)){
-    
+
 // if(userInput > 0){
 //     console.log("Positive Number");
 // }else if(userInput < 0){
 //     console.log("Negative number");
 // }else{
-//     console.log("Your number is zero");   
+//     console.log("Your number is zero");
 // }
 // }else{
 //     console.log("Please enter a number");
 // }
-
 
 // 4. Vowel or Consonant Checker
 // Task:
@@ -1539,7 +1427,7 @@
 // let userInput = prompt("Enter vowel to check")
 
 // if(isNaN(userInput)){
-    
+
 // if(userInput == 'a' || userInput == 'e' || userInput == 'i' || userInput == 'o' || userInput == 'u'){
 //     console.log(`${userInput} is vowel`);
 //  }else{
@@ -1548,7 +1436,6 @@
 // }else{
 //     console.log("Please enter a aplha");
 // }
-
 
 // 5. Simple Calculator
 // Task:
@@ -1559,7 +1446,6 @@
 // • Agar operator '*' hai, toh multiplication karo.
 // • Agar operator '/' hai, toh division karo.
 // • Agar user ne division ke waqt denominator 0 diya, toh error message show karein.
-
 
 // let num1 = +prompt("Enter First Number: ")
 // let num2 = +prompt("Enter Seconnd Number: ")
@@ -1583,8 +1469,6 @@
 //     console.log("Please Enter a number");
 // }
 
-
-
 // 6. Leap Year Checker
 // Task:
 // User se year input lena hai aur batana hai ke woh leap year hai ya nahi.
@@ -1597,15 +1481,12 @@
 // • 2100 → Not a Leap Year
 // • 2000 → Leap Year
 
-
 // let userInput = +prompt("Enter a year: ")
 // if(userInput % 4 == 0 && userInput % 100 != 0 || userInput % 400 == 0){
 // console.log("Leap year");
 // }else{
 //     console.log("Not a leap year");
 // }
-
-
 
 // 7. Temperature Checker
 // Task:
@@ -1615,7 +1496,6 @@
 // • Agar temperature 20-29°C hai, toh "It's Warm" show karo.
 // • Agar temperature 10-19°C hai, toh "It's Cool" show karo.
 // • Agar temperature 10°C se kam hai, toh "It's Cold" show karo.
-
 
 // let userInput = prompt("Enter a temperature: ")
 
@@ -1628,7 +1508,6 @@
 // }else{
 //     console.log("It cold");
 // }
-
 
 // 8. Grade Calculator
 // Task:
@@ -1645,7 +1524,6 @@
 // • Marks: 85 → "B Grade"
 // • Marks: 40 → "Fail"
 
-
 // let userInput = +prompt("Enter your number")
 
 // if(userInput >= 90 && userInput <= 100){
@@ -1660,9 +1538,8 @@
 //     console.log("Grade E");
 // }else{
 //     console.log("Fail");
-    
-// }
 
+// }
 
 //largest word in string
 
@@ -1679,12 +1556,6 @@
 
 // console.log(largestWord);
 
-
-
-
-
-
-
 // 9. Largest of Three Numbers
 // Task:
 // User se teen numbers input lena hai aur batana hai ke inme se sabse bara number kaunsa hai.
@@ -1695,7 +1566,6 @@
 // • Agar teeno equal hain, toh "All numbers are equal" show karein.
 // 📌Example:
 // • Numbers: 10, 25, 15 → "Largest number is 25"
-
 
 // let num1 = +prompt("Enter First Number")
 // let num2 = +prompt("Enter Second Number")
@@ -1709,8 +1579,6 @@
 //     console.log(`${num3} is largest number`);
 // }
 
-
-
 // 10. Login System
 // Task:
 // User se username aur password lena hai aur check karna hai ke credentials sahi hain ya nahi.
@@ -1723,8 +1591,6 @@
 // • Username: admin, Password: 12345 → "Login Successful"
 // • Username: admin, Password: 00000 → "Incorrect Credentials"
 
-
-
 // let email = prompt("Enter your email")
 // let password = prompt("Enter your Password")
 
@@ -1736,9 +1602,8 @@
 //     }
 // }else{
 //     console.log("Please enter all details");
-    
-// }
 
+// }
 
 //========================================================================================
 // array
@@ -1748,21 +1613,18 @@
 // push ka use karke 5 items add karo.
 // pop ka use karke 2 items remove karo.
 
-
 // let emptyarr = []
 
 // emptyarr.push("apple","banana","peach","grapes","orange")
 // emptyarr.pop()
 // emptyarr.pop()
 // console.log(emptyarr);
-
 
 // Queue Simulation (FIFO - First In, First Out)
 // Ek empty array banao jo ek queue ko represent kare.
 // push ka use karke 3 log add karo.
 // shift ka use karke pehla banda remove karo (jo sabse pehle aya tha).
 
-
 // let emptyarr = []
 
 // emptyarr.push("apple","banana","peach","grapes","orange")
@@ -1770,11 +1632,9 @@
 // emptyarr.pop()
 // console.log(emptyarr);
 
-
-
 // ================================================================================
 
-// Changing case 
+// Changing case
 
 // let myName = "Sumair Khan"
 // let upper = myName.toUpperCase()
@@ -1782,20 +1642,15 @@
 // console.log(upper);
 // console.log(lower);
 
-
 // let myName = "sUmAiR"
 
 // let formmated = myName.charAt(0).toUpperCase() + myName.slice(1).toLowerCase()
 // console.log(formmated);
 
-
 //Task 2: Take a name as input and print it in Title Case (First letter capital only).
 // let userInput = prompt("Enter anything")
 // let formmated = userInput.charAt(0).toUpperCase() + userInput.slice(1).toLowerCase()
 // console.log(formmated);
-
-
-
 
 // Task 3: Har word ka pehla letter capital karo (title case without function)
 // Hint:
@@ -1813,11 +1668,9 @@
 // let string = wordArr.join(" ")
 // console.log(string);
 
-
-
 // Task 3: Ek array mein mixed case words hain, sabko lowercase mein convert karo
 // ["Hello", "WoRLd", "JAVAscript", "Is", "FuN"]
-// Convert to: 
+// Convert to:
 // ["hello", "world", "javascript", "is", "fun"]
 //  Hint:
 // Ek new empty array banao
@@ -1825,21 +1678,17 @@
 // Har word pe .toLowerCase() lagao
 // New array mein push karo
 
-
 // let words = ["Hello", "WoRLd", "JAVAscript", "Is", "FuN"];
 // let empty = []
 // for(i = 0; i<words.length; i++){
 //     words[i] = words[i].toLowerCase()
 //     empty.push(words[i])
 // }
-// console.log(empty);   
-
-
+// console.log(empty);
 
 // ======================================================================================
 
 // Finding Segments Common Methods
-
 
 // let word = "Hello JavaScript"
 // console.log(word.indexOf("Java"));
@@ -1848,11 +1697,8 @@
 // let word = "Hello Hello JavaScript"
 // console.log(word.lastIndexOf("Hello"));
 
-
-
 // let word = "Hello hello JavaScript"
 // console.log(word.includes("hello"));
-
 
 // Task 1: First and Last Word Matching
 
@@ -1870,14 +1716,11 @@
 //         console.log("Not Match");
 //     }
 
-
-
 // Task 2: Find all indexes of a word (not just first)
 // let sentence = "Hello world, hello again, and hello forever!";
 // Har jagah "hello" kis index pe mila? (case-insensitive search)
 // Output: [0, 19, 36]
 //  Hint: Use indexOf() in a loop with updated starting position.
-
 
 // let sentence = "Hello world, hello again, and hello forever!";
 // let lower = sentence.toLowerCase().split(" ")
@@ -1886,18 +1729,15 @@
 // for(let i = 0; i < lower.length; i++){
 //     if(lower[i].includes("hello")){
 //      index.push(i)
-//     }   
+//     }
 // }
 // console.log(index);
-
-
 
 // Task 3: Censor Words
 
 //Tumhe ["stupid", "annoying"] jaise bad words ko "***" se replace karna hai.
 //"This is so *** and ***!"
 //(Hint: use loop + replace() or replaceAll())
-
 
 // let text = "This is so stupid and annoying!";
 // let arr = ["stupid","annoying!"]
@@ -1909,9 +1749,6 @@
 // }
 // console.log(lower);
 
-
-
-
 // Task 4: Check Palindrome Words in Sentence
 
 // let input = "madam and racecar are both palindrome";
@@ -1920,7 +1757,6 @@
 // racecar
 
 // (Hint: loop + reverse string + check)
-
 
 // let input = "madam and racecar are both palindrome";
 // let words = input.toLowerCase().split(" ");
@@ -1937,7 +1773,6 @@
 //         console.log(word);
 //     }
 // }
-
 
 // ===============================================================================
 // switch case
@@ -1972,8 +1807,6 @@
 //         break;
 // }
 
-
-
 // Ek grade variable lo (e.g. "A", "B", "C"...), aur switch use karke message print karo:
 // A = Excellent
 // B = Good
@@ -2004,8 +1837,6 @@
 //         break;
 // }
 
-
-
 // Advanced Task 1:
 // Ek program banao jo user ke role ko check kare:
 
@@ -2016,8 +1847,6 @@
 // User → "You can view content"
 
 // Guest or unknown → "Please login"
-
-
 
 // let grade = "Admin".toLowerCase()
 
@@ -2039,14 +1868,12 @@
 //         break;
 // }
 
-
 // Task 04:
 
 // Ek calculator banao jisme:
 // let num1 = 10;
 // let num2 = 5;
 // let operator = "+"; // try with "-", "*", "/"
-
 
 // let num1 = 5
 // let num2 = 10
@@ -2081,17 +1908,14 @@
 //     i++
 // }
 
-
 // Basic Task 1:
 // while loop ka use karke 1 se 10 tak numbers print karo.
-
 
 // let i = 1;
 // while(i <= 10){
 //     console.log(i);
-//     i++   
+//     i++
 // }
-
 
 // Basic Task 2:
 // Even numbers print karo from 2 to 20 using while.
@@ -2102,7 +1926,6 @@
 //     console.log(i);
 //     i+=2
 // }
-
 
 // Basic Task 2:
 // User se ek number lo (e.g. 5), aur while loop se uska multiplication table print karo. (e.g. 5 x 1 = 5, ..., 5 x 10 = 50)
@@ -2115,7 +1938,6 @@
 //     i++
 // }
 
-
 // Basic Task 3:
 
 // Ek secret number guessing game banao:
@@ -2125,18 +1947,14 @@
 // Sahi ho toh Correct! print ho
 // Ismein tum prompt() ka use kar sakte ho browser mein test karne ke liye.
 
-
 // let secret_num = 7
 // let userInput = +prompt("Enter the secret number")
 
-
 // while(userInput !== secret_num){
 //     console.log("Try Again");
-//     userInput = +prompt("Enter the secrect number again")   
+//     userInput = +prompt("Enter the secrect number again")
 // }
 // console.log("Correct number");
-
-
 
 // Tasks 4: Capitalize and Combine Sentences
 
@@ -2152,14 +1970,12 @@
 // Sare words ko space ke sath join() karke final sentence banao.
 // alert() se final sentence aur thank you message show karo.
 
-
-
 // let password = 1234;
 //     let attempt = 0;
 //     let maxAttempts = 3;
 //     let userInput;
 
-//     while(userInput != password && attempt < maxAttempts){       
+//     while(userInput != password && attempt < maxAttempts){
 //         userInput = +prompt("Enter your password: ")
 //         attempt++
 //       if(userInput == password){
@@ -2172,10 +1988,6 @@
 //         break
 //       }
 //     }
-
-
-
-
 
 // Tasks 5: Password Check with Limited Attempts
 
@@ -2194,8 +2006,6 @@
 //  Alert mein show karo: "Your account is locked"
 // Number check ke liye +prompt() ka use karo (string to number conversion).
 
-
-
 //  let empArr = []
 //     while(true){
 //         let userInput = prompt("Enter your Sentence:  || type 'done' to finish sentence")
@@ -2210,13 +2020,11 @@
 //                 arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1).toLowerCase()
 //                 empArr.push(arr[i])
 //             }
-            
-//         }
-//     }   
 
+//         }
+//     }
 
 //===============================================================================
-
 
 //do while loop
 
@@ -2225,28 +2033,24 @@
 // do{
 //     console.log("Number: ", i);
 //     i++
-    
-// }while(i <= 10)
 
+// }while(i <= 10)
 
 // Tasks 1: Print "Hello World" 3 times using do...while
 // Hint:
 // Ek counter variable banao, aur do...while mein 3 baar "Hello World" print karwao
-
 
 // let counter = 1;
 
 // do{
 //     counter++
 //     console.log("Hello world");
-    
-// }while(counter <= 3)
 
+// }while(counter <= 3)
 
 // Tasks 2: Use do...while to print even numbers from 2 to 10
 // Hint:
 // i = 2 se start karo, i += 2 se next even number lo
-
 
 // let i = 0;
 // do{
@@ -2254,12 +2058,9 @@
 //     console.log("even number",i);
 // }while(i < 10)
 
-
-
 // Tasks 3: Use do...while to print countdown from 5 to 1
-// Hint: 
+// Hint:
 // Reverse loop banao, i-- karo
-
 
 // let i = 5;
 
@@ -2268,12 +2069,9 @@
 //     i--
 // }while(i >= 1)
 
-
-
 // Tasks 4: Take user input until they type "exit"
 // Hint:
 // prompt() use karo (browser mein) aur do...while(input !== "exit")
-
 
 // do{
 //     let userInput = prompt("Exit").toLowerCase()
@@ -2285,22 +2083,20 @@
 //     }
 // }while(true)
 
-
-
 // Tasks 5: Create a simple login system that gives 3 attempts using do...while
 // Hint:
 // Counter variable rakho aur do...while(attempts < 3) mein input check karo
 
 // let counter = 3
 // let max = 1
-// do{ 
+// do{
 //     let userInput = prompt("Enter your pin")
 //         if(max <= counter){
 //             if(userInput == "1234"){
 //                 console.log("Login");
 //                 break;
 //                }else if(counter > max){
-                  
+
 //                    console.log("Wrong password");
 //                    alert(`${counter - max} attempts left`)
 //                       max++;
@@ -2309,16 +2105,12 @@
 //                 break
 //                }
 //         }
-    
+
 // }while(true)
-
-
 
 // Tasks 6: Use do...while to create a menu system (like ATM: 1-Check balance, 2-Deposit, 3-Exit)
 // Hint:
 // switch-case + do...while(option !== 3)
-
-
 
 // let balance = 1000;
 // let option;
@@ -2347,9 +2139,6 @@
 //     }
 // }while(option != "3")
 
-
-
-
 // Tasks 7: Validate user input to accept only numbers using do...while
 // Hint:
 // isNaN(input) check karo aur input repeat karo jab tak valid number na mile
@@ -2365,9 +2154,6 @@
 
 // alert(`Thanks for using valid number ${userInput}`)
 
-
-
-
 //============================================================================================
 
 // function declaration
@@ -2377,14 +2163,12 @@
 //     console.log("Hello Word");
 // }
 
-
 // function expression
 
 // let greet = function(){
 //     console.log("Hello world");
 // }
 // greet()
-
 
 // function with parameters
 
@@ -2393,13 +2177,9 @@
 // }
 // foo("Sumair")
 
-
-
 // Tasks 1: Greet the user
 
 //  Ek function banao greetUser(name) jo console mein message print kare:
-
-
 
 // function greet(name){
 //     return `Hello ${name}`
@@ -2407,7 +2187,6 @@
 
 // let newGreet = greet("Sumair")
 // console.log(newGreet);
-
 
 // Tasks 2: Sum of 2 numbers
 
@@ -2419,11 +2198,9 @@
 // let newAdd = add(10,10)
 // console.log(newAdd);
 
-
 // .Tasks 3: Check even or odd
 
 // Ek function banao isEven(num) jo return kare "Even" ya "Odd"
-
 
 // function isEven(num){
 //     if(num % 2 == 0){
@@ -2435,47 +2212,38 @@
 // }
 // isEven(2);
 
-
-
 // .Tasks 4: Count characters in string
 
 // Ek function countChars(str) likho jo string ke characters count kare
 
-
 // function count(){
 //     let word = "Hello world"
 //     console.log(word.length);
-    
+
 // }
 // count()
-
 
 // Tasks 5: Capitalize each word
 
 //  Function capitalizeWords(str) likho jo har word ka pehla letter capitalize kare.
 
+// function capitalizeWords(str){
+//     let word = "hello world"
+//     let arr = word.split(" ")
 
-    // function capitalizeWords(str){
-    //     let word = "hello world"
-    //     let arr = word.split(" ")
-        
-    //     for(let i = 0; i < arr.length; i++){
-    //         arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1).toLowerCase()
-            
-    //     }
-    //     let upper1 = arr.join(" ")
-    //     console.log(upper1);
-    // }
+//     for(let i = 0; i < arr.length; i++){
+//         arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1).toLowerCase()
 
-    // capitalizeWords()
+//     }
+//     let upper1 = arr.join(" ")
+//     console.log(upper1);
+// }
 
-
-
+// capitalizeWords()
 
 //     Tasks 6: Check if string is palindrome
 
 //  Function isPalindrome(str) likho jo check kare string palindrome hai ya nahi.
-
 
 // function isPalindrome(str){
 //     let word = "hero"
@@ -2492,14 +2260,9 @@
 
 // isPalindrome()
 
-
-
-
 // Tasks 7: Find largest number in array
 
 //  Function findMax(arr) likho jo array mein se sabse bada number de.
-
-
 
 // function findMax(){
 //     let arr = [8,2,9,4,5,6]
@@ -2508,7 +2271,7 @@
 //         // console.log(arr[i]);
 //         if(arr[i] > max){
 //             max = arr[i]
-            
+
 //         }
 //     }
 //     console.log("Your max number is: ", max)
@@ -2516,17 +2279,9 @@
 
 // findMax()
 
-
-
-
-
 // Tasks 8: Make calculator function
 
 //  Function calculator(a, b, operator) likho jo +, -, *, / handle kare.
-
-
-
-
 
 // function calculator(a,b, opeartor){
 //         switch (opeartor){
@@ -2549,21 +2304,15 @@
 //                 break;
 //         default:
 //             console.log("Invalid Operator");
-            
-                
+
 //         }
 // }
 
 // calculator(10,20, "/")
 
-
-
-
 // ======================================================================================
 
-
 // Math Object in javascript
-
 
 // round
 // let num1 = 5.4 // 4
@@ -2573,7 +2322,6 @@
 // let num1 = -5.4 //  -5
 // console.log(Math.round(num1));
 
-
 // floor
 
 // let num = 5.4  // 5
@@ -2581,15 +2329,12 @@
 // let num = -5.1  // -6
 // console.log(Math.floor(num));
 
-
-// ceil 
+// ceil
 
 // let num = 4.1 // 5
 // let num = -4.1 // 4
 // let num = -4.9 // 4
 // console.log(Math.ceil(num));
-
-
 
 // trunc
 
@@ -2598,16 +2343,12 @@
 // let num = 4.63456
 // console.log(Math.trunc(num));
 
-
-
-// max 
+// max
 // Spread operator ...a array ke elements ko individual values mein convert karta hai:
 // Math.max(9, 3, 4, 5, 67)
 
 // let a = [9,3,4,5,67]
 // console.log(Math.max(...a));
-
-
 
 // min
 
@@ -2615,13 +2356,9 @@
 // console.log(Math.min(...a));
 // console.log(Math.min(3,4,4,677,8,9));
 
-
 // pow
 // console.log(Math.pow(2,3));
 // console.log(Math.pow(87,9));
-
-
-
 
 // sqrt
 // let a = 36
@@ -2629,43 +2366,34 @@
 // let a = 64
 // console.log(Math.sqrt(a));
 
-
 // random
-// let num = Math.floor(Math.random() * 10 ) 
+// let num = Math.floor(Math.random() * 10 )
 // console.log(num);
-
 
 // abs
 
 // let num = -98
 // console.log(Math.abs(num));
 
-
 // PI
 // console.log(Math.PI);
 
-
-
 // ===============================================================
 
+// Tasks 1: Get lowest number from input:
 
-    // Tasks 1: Get lowest number from input:
+// Ask user 3 numbers using prompt → show smallest.
 
-    // Ask user 3 numbers using prompt → show smallest.
+// let num1 = +prompt("Enter any number")
+// let num2 = +prompt("Enter any number")
+// let num3 = +prompt("Enter any number")
 
-    // let num1 = +prompt("Enter any number")
-    // let num2 = +prompt("Enter any number")
-    // let num3 = +prompt("Enter any number")
-      
-    // let lowest = Math.min(num1,num2,num3)
-    // console.log(`Your lowest nuber is ${lowest}`);
-    
+// let lowest = Math.min(num1,num2,num3)
+// console.log(`Your lowest nuber is ${lowest}`);
 
-    
 // Tasks 3: Square root finder:
 
 // User inputs a number → print its square root.
-
 
 // let userInput = +prompt("Enter Squre root: ")
 
@@ -2673,7 +2401,6 @@
 
 // let equal = Number.isInteger(sqr)
 // equal ? alert(`${sqr} sqr root of ${userInput}`) : alert(`${userInput} is not a sqrt root`)
-
 
 // Ye JavaScript ka built-in method hai jo check karta hai:
 
@@ -2685,16 +2412,11 @@
 // Number.isInteger(NaN)      // false
 // Number.isInteger(Infinity) // false
 
-
-
-
 // Tasks 4: Absolute value practice:
 
 // User inputs negative number → convert to positive using Math.abs.
 // let userInput = +prompt("Enter negative: ")
 // console.log(Math.abs(userInput));
-
-
 
 // Tasks 5: Random Dice Simulator:
 
@@ -2706,9 +2428,6 @@
 // let dice =  Math.ceil(Math.random() * 6)
 // console.log(dice);
 
-
-
-
 // Tasks 6: Max/Min in an array manually:
 
 // Use Math.max.apply(null, arr) and Math.min.apply(...).
@@ -2716,17 +2435,11 @@
 // Hint:
 // Math ka method normally numbers accept karta hai, array directly pass nahi hoti. Isliye array ke elements ko method ke andar individual values ke form mein pass karna padta hai.
 
-
-
 // let arr = [2,5,23,2.2,323,23.21]
 // console.log(Math.max(...arr));
 
-
 // let arr = [2,5,23,2.2,323,23.21]
 // console.log(Math.min(...arr));
-
-
-
 
 // Tasks 7: Random OTP Generator (4 digits):
 
@@ -2738,15 +2451,10 @@
 // let otp = Math.ceil(Math.random() * 9000 + 1000)
 // console.log(otp);
 
-
-
-
 // Tasks 8: Find power and check if it's even:
-
 
 // Hint:
 // User se do numbers lo — ek base aur ek exponent. Dono ka power result calculate karo. Phir check karo ke result 2 se divide ho raha hai ya nahi (even ya odd decide karne ke liye).
-
 
 // let num1 = +prompt("Enter base number")
 // let num2 = +prompt("Enter exponent number")
@@ -2755,16 +2463,12 @@
 
 // check % 2 == 0 ? alert("its even number") : alert("its odd number")
 
-
-
 // Ek secret number guessing game banao:
 // Secret number: 7
 // Jab tak user correct guess nahi karta, loop repeat ho
 // Agar guess wrong ho toh Try again print ho
 // Sahi ho toh Correct! print ho
 // Ismein tum prompt() ka use kar sakte ho browser mein test karne ke liye.
-
-
 
 // while(true){
 //     let random = Math.ceil(Math.random() * 5)
@@ -2778,10 +2482,8 @@
 // }
 // ==================================================================================
 
-
 // let userInput = +prompt("ENter password lenght: ")
 // let password = ""
-
 
 // for(let i = 0; i < userInput; i++){
 //     let random = Math.round(Math.random() * 3)
@@ -2799,28 +2501,23 @@
 
 // console.log(password);
 
-
-
 // let color = "#"
 // for(let i = 0; i < 6; i++){
-    
+
 //     let random = Math.round(Math.random());
 //     let code;
 
 // if(random == 1){
 //     code = Math.floor(Math.random() * 6) + 97;
 //     // console.log(code);
-    
+
 // }else{
 //     code = (Math.floor(Math.random() * 10) + 48);
 // }
 //  color += String.fromCharCode(code)
 // }
 
-// console.log(color);  
-
-
-
+// console.log(color);
 
 // ================================================================================
 
@@ -2845,12 +2542,9 @@
 // let num2 = Number(num1)
 // console.log(num2);
 
-
 // let str5 = "123.45";
 // let num5 = Number(str5);
 // console.log(num5);  // Output: 123.45
-
-
 
 // Convert "100" to a number using all 3 methods.
 
@@ -2858,17 +2552,13 @@
 // let num = parseInt(str)
 // console.log(num);
 
-
 // let str = '100.5678'
 // let num = parseFloat(str)
 // console.log(num);
 
-
-
 // let str = '100.5678'
 // let num = Number(str)
 // console.log(num);
-
 
 // Convert "89.99" to a number using all 3 methods.
 
@@ -2876,37 +2566,27 @@
 // let num = parseInt(str)
 // console.log(num);
 
-
 // let str = "89.99"
 // let num = parseFloat(str)
 // console.log(num);
-
-
 
 // let str = "89.99"
 // let num = Number(str)
 // console.log(num);
 
-
 // Try converting "abc123" using each method.
-
 
 // let str = "abc123"
 // let num = parseInt(str)
 // console.log(num);
 
-
 // let str = "abc123"
 // let num = parseFloat(str)
 // console.log(num);
 
-
-
 // let str = "$123"
 // let num = Number(str)
 // console.log(num);
-
-
 
 // Convert "$45.50" — and observe results
 
@@ -2914,8 +2594,6 @@
 // let replace = amount.replace("$", "")
 // let float = parseFloat(replace)
 // console.log(float);
-
-
 
 // Try converting " 75.25 " (string with spaces).
 
@@ -2927,23 +2605,17 @@
 // let result = parseFloat(str);
 // console.log(result);  // Output: 75.25
 
-
 // let str = "   75.25   ";
 // let result = Number(str);
 // console.log(result);  // Output: 75.25
-
-
 
 // let num = 123
 // let str = num.toString()
 // console.log(str);
 
-
-
 // let num = 123
 // let str = String(num)
 // console.log(str);
-
 
 // toFixed
 
@@ -2951,29 +2623,23 @@
 // let result = num.toFixed(4)
 // console.log(result);
 
-
 // let num = 9.520
 // console.log(num.toFixed(1));
 
-
-
 // let price = 45.6189;
-// let fixed = price.toFixed(2); 
-// console.log(fixed);         
-// console.log(typeof fixed);  
+// let fixed = price.toFixed(2);
+// console.log(fixed);
+// console.log(typeof fixed);
 
 // Round 99.9999 to 2 decimal places using toFixed.
 
-
 // let num =  99.9999
 // console.log(num.toFixed(2));   // 100.00
-
 
 // Use toFixed(4) on 5.5 and notice padding.
 
 // let num = 5.5
 // console.log(num.toFixed(4));   5.5000
-
 
 // Convert "45.678" (as string) to number and limit to 1 decimal.
 // let str = "45.678";
@@ -2981,47 +2647,9 @@
 // let decimal = num.toFixed(2)
 // console.log(decimal);
 
-
 // =======================================================================================
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // ================================================================================
-
 
 //                    DOM jn javascript
 
@@ -3035,18 +2663,13 @@
 // let heading = document.getElementById("mainHeading");
 // console.log(heading.innerText); // My Header
 
-
-
 // let title = document.getElementById('title')
 // title.innerText = "hi Javascript"
-
 
 // function foo(){
 //     let title = document.getElementById('title')
 //     title.innerText = "hi Javascript"
 // }
-
-
 
 // 🛠 DOM Ko Access Karne Ke Liye Methods:
 // 🔸 1. document.getElementById("id")
@@ -3064,7 +2687,6 @@
 // 🔸 5. document.querySelectorAll("selector")
 // Sare matching elements deta hai (NodeList).
 
-
 // 🔄 DOM Mein Kya Kya Kar Sakte Ho?
 // Action	JavaScript
 // Text change	element.innerText = "new text"
@@ -3076,37 +2698,27 @@
 // Append	parent.appendChild(child)
 // Events	element.addEventListener("click", function() {})
 
-
-
 // let heading = document.getElementById("mainHeading");
 // console.log(heading.innerText); // My Header
 
-
 // let allText = document.getElementsByClassName("myText");
-// allText[0].innerText = "Class Changed"; 
-
+// allText[0].innerText = "Class Changed";
 
 // let tags = document.getElementsByTagName("p");
 //   tags[0].innerText = "Tag Changed";
 
-
 // let first = document.querySelector(".one"); // only first match
 //   first.style.color = "blue";
-
 
 // let boxes = document.querySelectorAll(".box");
 // boxes[1].style.background = "yellow"; // second box
 
-
 // document.getElementById("text").innerHTML = "<b>Bold Text</b>";
 // document.getElementById("text").innerHTML = "<h1>Hello</h1>";
 
-
-
-
 // ==================================================================================
 
-               // JavaScript Date Object
+// JavaScript Date Object
 
 // let now = new Date()
 // console.log(now);
@@ -3119,20 +2731,16 @@
 // console.log(now.getMilliseconds());
 // console.log(now.getDate());
 
-
 // Print current date in DD/MM/YYYY format.
 // let today = new Date()
 // // console.log(today);
 // let formmated = `${today.getDate()}/${today.getMonth() + 1}/${today.getFullYear()}`
 // console.log(formmated);
 
-
-
 // Print only the time in HH:MM:SS format.
 // let today = new Date()
 // let format = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`
 // console.log(format);
-
 
 // Print the day of the week using getDay() and map it to name (e.g., 0 = Sunday).
 
@@ -3165,7 +2773,6 @@
 //         console.log("Invalid day");
 // }
 
-
 // Create a small function that shows "Today is: [Day], [Month] [Date], [Year]"
 
 // function showDate(){
@@ -3175,7 +2782,7 @@
 //     let date = today.getDate()
 //     let year = today.getFullYear()
 //     console.log(`Today is: ${day}, ${month},${date}, ${year}`);
-    
+
 // }
 // showDate()
 
@@ -3188,15 +2795,11 @@
 // let age = todayYear - dobYear
 // console.log(age);
 
-
-
-
 // =====================================================================================
 // Current Date & Time Display
 // Task: Current date and time ko browser mein display karo.
 // let today = new Date()
 // console.log(today);
-
 
 // Only Date Extract Karo
 // Task: Sirf date (day/month/year) print karo.
@@ -3205,21 +2808,16 @@
 // let today = new Date()
 // console.log(`Today is ${today.getDate()}/${today.getMonth() + 1}/${today.getFullYear()}`);
 
-
-
 // Only Time Extract Karo
 // Task: Sirf current time show karo in format: HH:MM:SS
 // let today = new Date()
 // console.log(`Time ${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`);
-
-
 
 // Countdown Timer
 // Task: Kisi specific future date (jaise New Year) tak kitna time baqi hai wo countdown show karo.
 // Output example: 100 days 5 hours 30 minutes 10 seconds left
 // function updateCountdown() {
 
-    
 //     let today = new Date()
 //     let eid = new Date("June 08 2025")
 //     // console.log(eid);
@@ -3230,7 +2828,6 @@
 //         clearInterval(interval);
 //         return;
 //     }
-
 
 // let seconds = Math.floor(time / 1000)
 // // console.log(seconds);
@@ -3248,7 +2845,6 @@
 // // console.log(remainingSeconds);
 // // console.log(`${days} days ${remainingHours} hours ${remainingMinutes} minutes ${remainingSeconds} seconds left`);
 
-
 // document.getElementById("countdown").innerText =
 // `${days} days ${remainingHours} hours ${remainingMinutes} minutes ${remainingSeconds} seconds left`;
 
@@ -3256,9 +2852,6 @@
 // updateCountdown();
 
 // setInterval(updateCountdown, 1000);
-
-
-
 
 // Greetings Based on Time
 // Task: Agar time morning hai toh “Good Morning” show karo, afternoon mein “Good Afternoon” etc.
@@ -3281,8 +2874,6 @@
 //     console.log("Good Night");
 // }
 
-
-
 // Age Calculator
 // Task: User se date of birth lo aur uska age calculate karke show karo.
 
@@ -3296,12 +2887,6 @@
 // let age = todayYear - dobYear
 // console.log(age);
 
-
-
-
-
-
-
 // Date Formatter Function
 // Task: Ek function banao jo koi bhi date le aur usko format kare: Monday, 23 May 2025
 
@@ -3313,23 +2898,17 @@
 //     let currentDay = days[today.getDay()]
 //     let currentMonth = month[today.getMonth()]
 //     // console.log(currentDay);
-    
+
 //     console.log(`${currentDay}, ${today.getDate()} ${currentMonth} ${today.getFullYear()}`);
-    
+
 // }
 // format()
-
-
-
-
-
-
 
 // Days Passed Since a Date
 // Task: Kisi bhi past date se aaj tak kitne din guzray hain, wo calculate karo.
 
 // let today = new Date()
-// let eid = new Date("March 1 2025") 
+// let eid = new Date("March 1 2025")
 // let time = today.getTime() - eid.getTime()
 // // console.log(time);
 // let second = Math.floor(time / 1000)
@@ -3338,22 +2917,15 @@
 // let hours = Math.floor(minutes / 60)
 // let day = Math.floor(hours / 24)
 
-// let dayPassed = day 
+// let dayPassed = day
 // let remainingHours = hours % 24
 // let remainingMinutes = minutes % 60
 // let remainingSeconds = second % 60
 
-
 // console.log(`${dayPassed} days ${remainingHours} hours ${remainingMinutes} minutes ${remainingSeconds} passed`);
-
-
-
-
-
 
 // Weekend Checker
 // Task: User se koi date lo aur check karo kya wo weekend (Saturday ya Sunday) hai?
-
 
 // let today = new Date()
 // let userInput = prompt("Enter any date: ")
@@ -3365,16 +2937,12 @@
 //     console.log("Week day");
 // }
 
-
-
-
 // How Many Fridays in a Month;
 // Task: Kisi bhi month aur year ke liye check karo us month mein kitne Fridays hain.
 
 // let today = new Date();
 // let year = new Date().getFullYear();
 // let month = new Date().getMonth();
-
 
 // let totalDays = new Date(year, month + 1,0).getDate()
 // // console.log(totalDays);
@@ -3384,22 +2952,16 @@
 //     // console.log(i);
 //     let friday = new Date(year, month, i).getDay();
 //     // console.log(friday);
-    
+
 //     if(friday == 5){
 //         fridayCount++;
 //     }
-    
+
 // }
 // console.log(fridayCount);
 
-
-
-
-
-
 // Birthday Reminder
 // Task: Ek fixed birthday date lo aur check karo ke wo is saal aaya ya aane wala hai. Aur agar aane wala hai to kitne din baqi hain?
-
 
 // let today = new Date()
 // let birthDayInput = +prompt("Enter your birth date (e.g 21): ");
@@ -3416,7 +2978,7 @@
 //     let hours = Math.floor(minutes / 60)
 //     let day = Math.floor(hours / 24)
 //     // console.log(day);
-    
+
 //     let remainingHours = hours % 24
 //     let remainingMinutes = minutes % 60
 //     let remainingSeconds = second % 60
@@ -3424,23 +2986,18 @@
 //     console.log(`${day} ${remainingHours} ${remainingMinutes} ${remainingSeconds} left`);
 // }
 
-
 // ============================================================================================
 
-
-                                      // Events: link
+// Events: link
 
 // function popup(message) {
 //  alert(message);
-//  }                                    
-
+//  }
 
 // document.getElementById('dice').addEventListener('click', function(){
 //     let random = Math.floor(Math.random() * 6) + 1;
 //     document.getElementById('image').src = `images/dice${random}.png`
 // })
-
-
 
 // let arr = ['images/dice1.png','images/dice2.png','images/dice3.png','images/dice4.png','images/dice5.png','images/dice6.png']
 
@@ -3450,14 +3007,11 @@
 //     document.getElementById('image').src = arr[random]
 // })
 
-
-
 // document.getElementById('dice').addEventListener('click',function(){
 //     let random = Math.floor(Math.random() * 6) + 1;
 //     document.getElementById('images')
 
 // })
-
 
 // if else condition
 
@@ -3467,13 +3021,12 @@
 // off.addEventListener('click',function(){
 //     document.getElementById('offBulb').style.display = 'none'
 //     document.getElementById('onBulb').style.display = 'block'
-// })  
+// })
 
 // on.addEventListener('click',function(){
 //     document.getElementById('offBulb').style.display = 'block'
 //     document.getElementById('onBulb').style.display = 'none'
 // })
-
 
 // let bulbOn = document.getElementById('bulbOn')
 // let bulbOff = document.getElementById('bulbOff')
@@ -3490,8 +3043,6 @@
 //     }
 // })
 
-
-
 // btnOff.addEventListener('click', function(){
 //     if(bulbOff.hidden){
 //         bulbOn.hidden = true;
@@ -3503,8 +3054,7 @@
 // })
 
 // ==============================================================================
-// Slider 
-
+// Slider
 
 // let prev = document.getElementById('prev')
 // let next = document.getElementById('next')
@@ -3539,7 +3089,7 @@
 //     `
 // }
 
-// updateSlider()      
+// updateSlider()
 
 // ===========================================================================================
 
@@ -3548,8 +3098,6 @@
 // function setName(){
 //     document.getElementById('name').value = "Sumair Khan";
 // }
-
-
 
 //  function fillCity() {
 //  var cityName;
@@ -3567,12 +3115,7 @@
 //      document.getElementById("city").value = cityName;
 //      }
 
-
-
-
-    //  Reading and setting paragraph text
-
-
+//  Reading and setting paragraph text
 
 //  function expandLoris() {
 //  var expandedParagraph = `Slow lorises are a group of several species of trepsirrhine primates which
@@ -3583,32 +3126,25 @@
 //  document.getElementById("slowLoris").innerHTML = expandedParagraph;
 //  }
 
-
-
 //  function placeAList() {
 //  var listToPlace = "<ol><li>Slow loris</li><li>Fast loris</li><li>Just-right loris</li></ol>";
 //  document.getElementById("lorisList").innerHTML = listToPlace;
 //  }
-    
 
 //  function peekAtContent() {
 //  var whatsThere = document.getElementById("content").innerHTML;
 //  }
-
 
 //  function readText() {
 //     let para = document.getElementById("myPara");
 //     alert(para.textContent);  // yeh text alert box mein show karega
 //   }
 
-
 // swaping image
-
 
 // function changeImage() {
 //     document.getElementById("myImage").src = "/images/on.jpg";
 //   }
-
 
 // ========================================================================================
 
@@ -3629,13 +3165,12 @@
 //     education: "bachalor",
 //     greet: function(){
 //         console.log("Hello " + this.name);
-        
+
 //     }
 
 // }
 
 // student.greet()
-
 
 // let user = {
 //     "first name": "sumair",
@@ -3643,9 +3178,6 @@
 //     age: 22
 // }
 // console.log(user["first name"]);
-
-
-
 
 // let student = {
 //   name: "Grace",
@@ -3657,33 +3189,25 @@
 // };
 // console.log(student.address.city);
 
-
 // let students = [
 //   { name: "Grace", age: 22 },
 //   { name: "Ali", age: 23 },
 //   { name: "Sara", age: 21 }
 // ];
 
-
 // // console.log(students[0].age);
 
 // // for(let i = 0; i < students.length; i++){
 // //     console.log(students[i].name + "-" + students[i].age);
-    
+
 // // }
 
 // students.push({ name: "Zara", age: 24 });
 // console.log(students[0].name);
 
-
-
-
 //                                              TASKS
 
 // array of objects
-
-
-
 
 // 🟢 Basic Level
 // 1️⃣ Ek array banao jisme teen student objects hon: har student ka name aur age ho.
@@ -3708,13 +3232,8 @@
 //     console.log(std[i].name);
 // }
 
-
-
-
-
 // 2️⃣ Array ke pehle student ka name console me print karo.
 // Hint: students[0].name
-
 
 // let std = [
 //     {
@@ -3735,10 +3254,6 @@
 // for(let i = 0; i < std.length; i++){
 //     console.log(std[i].name);
 // }
-
-
-
-
 
 // 3️⃣ Array ke last student ki age change karke 25 kar do.
 
@@ -3757,11 +3272,8 @@
 //     }
 // ]
 
-
 //  std[2].age = 25
 //  console.log(std[2].age);
- 
-
 
 // 4️⃣ Array me ek naya student add karo jiska name "Sara" aur age 22 ho.
 // let std = [
@@ -3779,15 +3291,10 @@
 //     }
 // ]
 
-
-// std.push({name: "sara", age: 11}) 
+// std.push({name: "sara", age: 11})
 // console.log(std);
 
-
-
 // 6️⃣ Array ke har student ka name print karne ke liye loop use karo.
-
-
 
 // let std = [
 //     {
@@ -3809,12 +3316,7 @@
 //     console.log(std[i].name);
 // }
 
-
-
-
 // 7️⃣ Pehle student ka age 1 se increase karo.
-
-
 
 // let std = [
 //     {
@@ -3833,7 +3335,6 @@
 
 // std[1].age += 1
 // console.log(std[1].age);
-
 
 // 8️⃣ Check karo kya array me koi student ka name "Sara" hai.
 
@@ -3860,7 +3361,7 @@
 //     // }else{
 //     //     console.log("no");
 //     //     break
-        
+
 //     // }
 //     // some method
 //     // if(std.some(student => student.name === "sara")){
@@ -3871,8 +3372,6 @@
 //     //     break;
 //     // }
 // }
-
-
 
 //  Advanced Questions
 // 9️⃣ Array ke sab students ki average age find karo.
@@ -3896,7 +3395,6 @@
 // 16️⃣ Array me se pehla student find karo jiska name "Ali" hai.
 // Hint: find method.
 
-
 // 21️⃣ Ek complex array banao jisme students ke saath unke subjects ka bhi array ho (e.g. {name: "Ali", age:20, subjects: ["Math","English"]}).
 // Hint: Nested array.
 
@@ -3912,15 +3410,7 @@
 // 29️⃣ Array me se koi student aisa hai kya jiska subjects me "Physics" ho?
 // Hint: some + includes
 
-
-
-
-
 // ==============================================================================
-
-
-
-
 
 // local storage
 
@@ -3928,7 +3418,6 @@
 // localStorage.setItem("name", "sumair khan")
 // localStorage.setItem("age", 21)
 // localStorage.setItem("color", "pink")
-
 
 // getitem
 
@@ -3938,14 +3427,12 @@
 // remove item
 // localStorage.removeItem("name")
 
-
 // localStorage.clear()
 
 // get by key
 
 // let key = localStorage.key(1)
 // console.log(key);
-
 
 // set store object
 
@@ -3959,41 +3446,34 @@
 // console.log(getstd.name);
 // console.log(getstd.age);
 
-
 // store array
 
 // let color = ["red", "green", "yellow", "pink"];
 // localStorage.setItem("color", JSON.stringify(color))
 
-
 // let getcolor = JSON.parse(localStorage.getItem("color"))
 // console.log(getcolor);
 
-
-
 // ========================================================================================
-// map 
-
+// map
 
 // let arr1 = [1,2,3,4,5,6,7]
 // // let arr = ["1","2",3]
 // let newArr1 = arr1.map((ele,index,sums)=>{
-//     console.log(ele, index,sums);    
+//     console.log(ele, index,sums);
 // })
 
-    // let arr = ["1","2",3]
-    // let newArr = arr.map((ele,index,sums)=>{
-    //     return (ele, index,sums);    
-    // })
-    // console.log(newArr);
+// let arr = ["1","2",3]
+// let newArr = arr.map((ele,index,sums)=>{
+//     return (ele, index,sums);
+// })
+// console.log(newArr);
 
 // const arr = ["1","2","3","4","5"]
 // let newArr = arr.map((curEle,index,array)=>{
 //        return `the value is ${curEle} Index No ${index} belongs to ${array}`
 //  })
 //  console.log(newArr)
-
-
 
 // Ek array [1, 2, 3, 4] ko map() ka use karke double karo.
 
@@ -4003,7 +3483,6 @@
 // })
 // console.log(newArr);
 
-
 // Ek array of strings ko map() se uppercase mein convert karo.
 // let arr = ["apple","mango","peach"]
 // let newArr = arr.map((ele)=>{
@@ -4011,9 +3490,6 @@
 //    return capital
 // })
 // console.log(newArr);
-
-
-
 
 // Ek object array lo {name: 'Ali', age: 20} jaisa, aur map() ka use karke sirf name ka array banao.
 // let obj = [
@@ -4026,19 +3502,15 @@
 // })
 // console.log(newArr);
 
-
-
 // Ek map() likho jo har item ke sath uska index bhi return kare format "value - index".
 
 // let arr = ["apple","mango","peach"]
 // let newArr = arr.map((ele,ind)=>{
-    
+
 //    let capital =  ele.toUpperCase()
 //    return {capital, ind}
 // })
 // console.log(newArr);
-
-
 
 // ====================================================================================
 
@@ -4050,18 +3522,13 @@
 // })
 // console.log(newArr);
 
-
-
 // Ek array words = ["apple", "banana", "kiwi", "mango", "pear"] se sirf wo words filter karo jinki length 5 se zyada ho.
-
 
 // let word = ["apple", "banana", "kiwi", "mango", "pear"]
 // let newArr = word.filter((ele)=>{
 //     return ele.length > 5
 // })
 // console.log(newArr);
-
-
 
 // Ek array of objects:
 // let users = [
@@ -4074,13 +3541,8 @@
 // let newArr = users.filter((ele)=>{
 //     if(ele.active){
 //         console.log(ele.name,ele.active);
-//     }  
+//     }
 // })
-
-
-
-
-
 
 // Ek array of objects:
 // let products = [
@@ -4095,11 +3557,6 @@
 //     }
 // })
 
-
-
-
-
-
 // =================================================================================
 // find
 
@@ -4111,9 +3568,6 @@
 // })
 // console.log(newArr);
 
-
-
-
 // Ek array fruits = ["apple", "banana", "mango", "peach"] hai. find() ka use karke pehla fruit dhoondo jo "m" se start hota ho.
 
 // let  fruits = ["apple", "banana", "mango", "peach"]
@@ -4121,11 +3575,6 @@
 //     return ele.startsWith("m");
 // })
 // console.log(newArr);
-
-
-
-
-
 
 // Ek array of objects:
 // let students = [
@@ -4141,16 +3590,10 @@
 //   { name: "Omar", score: 60 }
 // ];
 
-
 // let newArr = students.find((ele)=>{
 //     return ele.score > 50
 // })
 // console.log(newArr);
-
-
-
-
-
 
 // Ek array of users:
 // let users = [
@@ -4165,14 +3608,6 @@
 // })
 // console.log(newArr);
 
-
-
-
-
-
-
-
-
 // ====================================================================================
 // reduce
 
@@ -4185,9 +3620,6 @@
 
 // console.log(sum);
 
-
-
-
 // Ek array words = ["Hello", "World"] ko ek hi string me join karo "Hello World" banane ke liye.
 
 // let words = ["Hello", "World"]
@@ -4195,10 +3627,6 @@
 //    return `${ele} ${num}`
 // })
 // console.log(newArr);
-
-
-
-
 
 // 5. Ek array of objects:
 // reduce() ka use karke total price nikalna hai.
@@ -4209,17 +3637,10 @@
 // ];
 
 // let totalPrice = items.reduce((acc, ele) => {
-//     return acc + ele.price; 
+//     return acc + ele.price;
 // }, 0); // 0 is starting value for acc
 
 // console.log(totalPrice); // Output: 240
-
-
-
-
-
-
-
 
 // // Ek array:
 // let votes = ["yes", "no", "yes", "yes", "no"];
@@ -4229,7 +3650,6 @@
 // },0)
 
 // console.log(newArr);
-
 
 // let votes = ["yes", "no", "yes", "yes", "no"];
 
@@ -4243,9 +3663,6 @@
 // }, { yes: 0, no: 0 }); // initial value object
 
 // console.log(voteCount); // { yes: 3, no: 2 }
-
-
-
 
 // ========================================================================================
 
@@ -4261,15 +3678,10 @@
 // }
 // obj.greet()
 
-
-
 // function showThis() {
 //   console.log(this);
 // }
 // showThis();
-
-
-
 
 // ============================================================================
 // foreach
@@ -4282,10 +3694,8 @@
 // let numbers = [1, 2, 3, 4, 5]
 // numbers.forEach((ele)=>{
 //     console.log(ele * ele);
-     
-// })           
 
-
+// })
 
 // Task 2
 // Ek array students = ["Ali", "Sara", "Ahmed"] hai. forEach() ka use karke print karo:
@@ -4294,10 +3704,8 @@
 // let students = ["Ali", "Sara", "Ahmed"]
 // students.forEach((ele)=>{
 //     console.log(ele);
-    
+
 // })
-
-
 
 // Task 3
 // Ek array prices = [100, 200, 300] hai. forEach() ka use karke har price me 10% tax add karo aur naya array print karo.
@@ -4310,15 +3718,13 @@
 // })
 // console.log(newPrices);
 
-
 // Task 4
 // Ek array words = ["apple", "banana", "cherry"] hai. forEach() ka use karke har word ko uppercase me print karo.
 // let words = ["apple", "banana", "cherry"]
 // words.forEach((ele)=>{
 //     console.log(ele.toUpperCase());
-    
-// })
 
+// })
 
 // ====================================================================================
 
@@ -4331,13 +3737,10 @@
 // // console.log(fruit1,fruit2);
 // console.log(f1,f2,f3);
 
-
-
 // let colors = ["red", "green", "blue"];
 // let [first, , third] = colors
 // console.log(first);
 // console.log(third);
-
 
 // let colors = ["red", "green", "blue"];
 // let [first, , third] = colors;
@@ -4345,19 +3748,14 @@
 // console.log(first); // red
 // console.log(third); // blue
 
-
-
 // let numbers = [10];
 // let [num1, num2 =20]= numbers
 // console.log(num1);
 // console.log(num2);
 
-
 // let a = 5, b = 10;
 // [a,b]= [b,a]
 // console.log(a,b);
-
-
 
 // let person = { name: "Ali", age: 25, city: "Karachi" };
 
@@ -4369,17 +3767,10 @@
 // console.log(name);
 // console.log(age);
 
-
-
-
 // let car = { brand: "Toyota", model: "Corolla" };
 // let {brand: carBrand, model: carModel} = car
 // console.log(carBrand);
 // console.log(carModel);
-
-
-
-
 
 // let user = { name: "Sumair" };
 
@@ -4387,10 +3778,6 @@
 
 // console.log(name); // Sumair
 // console.log(age);  // 18 (default value)
-
-
-
- 
 
 // let student = {
 //   name: "Sara",
@@ -4404,13 +3791,6 @@
 // console.log(math);
 // console.log(english);
 
-
-
-
-
-
-
-
 // function pic({name,age}){
 //       console.log(`Name: ${name}, Age: ${age}`);
 // }
@@ -4422,27 +3802,22 @@
 
 // spread and rest operator
 
-
 // copy arr
 // let arr = [1,2,3,4]
 // let spread = [...arr]
 // console.log(spread);
 
-
-// marge arr 
+// marge arr
 // let arr1 = [1,2,3,4]
 // let arr2 = [1,2,3,4]
 // let newArr = [...arr1, ...arr2]
 // console.log(newArr);
-
-
 
 // marge obj
 // let obj1 = { name: "Ali" };
 // let obj2 = { age: 20 };
 // let marge = { ...obj1, ...obj2}
 // console.log(marge);
-
 
 // shallow copy
 // let original = [10, 20, 30];
@@ -4452,23 +3827,19 @@
 // console.log(original);
 // console.log(copy);
 
-
-
 // ==============================================================================
 // REST OPERATOR
 
-// ye ab dekho mne arr pass krne ki jaga rest operator pass kr diye 
+// ye ab dekho mne arr pass krne ki jaga rest operator pass kr diye
 // function sum(...numbers){
 //     return numbers.reduce((acc, num)=> acc + num, 0)
 // }
 // console.log(sum(1,2,3,4,5));
 
-
 // arr Destructuring
 // let [first, ...rest] = [10, 20, 30, 40];
 // console.log(first);
 // console.log(rest);
-
 
 // obj Destructuring
 // let person = { names: "Ali", age: 25, city: "Karachi" };
@@ -4483,7 +3854,6 @@
 // let newArr = [...arr1, ...arr2]
 // console.log(newArr);
 
-
 // Task 2:
 // Ek object {name: "Ali"} aur {age: 20} ko Spread use karke ek me combine karo.
 // marge obj
@@ -4492,15 +3862,12 @@
 // let marge = { ...obj1, ...obj2}
 // console.log(marge);
 
-
 // Task 3:
 // Ek function banao jo Rest operator se multiple arguments lega aur unka sum return karega.
 // function sum(...numbers){
 //     return numbers.reduce((acc,num)=> acc + num, 0)
 // }
 // console.log(sum(1,2,3,4,5));
-
-
 
 // Task 4:
 // Array destructuring karke first element ko alag variable me lo, baaki ko ek alag array me store karo (Rest use karke).
@@ -4509,23 +3876,16 @@
 // console.log(first);
 // console.log(rest);
 
-
-
 // Task 5:
 // Ek object ke first property ko alag variable me lo aur baaki properties ko ek object me store karo (Rest use karke).
-
 
 // let person = { names: "Ali", age: 25, city: "Karachi" };
 // let {names, ...sums} = person
 // console.log(names);
 // console.log(sums);
 
-
-
-
 // =====================================================================================
 // Synchronous vs Asynchronous JavaScript
-
 
 // Task 1:
 // Ek program banao jo:
@@ -4533,31 +3893,21 @@
 // 2 seconds baad "Download Complete!" print kare.
 // Fir "Processing File..." print kare.
 
-
 // setTimeout(function show(){
 //     console.log("Downloading...");
-    
+
 // }, 1000)
 
-
-
 // setTimeout(function show(){
-    
+
 // console.log("Processing File...");
-    
+
 // }, 2000)
-
-
 
 // setTimeout(function show(){
 //     console.log("Download Complete");
-    
+
 // }, 5000)
-
-
-
-
-
 
 // Task 2:
 // Ek function delayMessage banao jo parameter le message ka aur delay ka (seconds), aur delay ke baad message print kare.
@@ -4565,11 +3915,10 @@
 // function delayMessage(message,delayInSeconds){
 //     setTimeout(()=>{
 //                 console.log(`hello ${message}`);
-        
+
 //     }, delayInSeconds * 1000)
 // }
 // delayMessage("Sumair", 2)
-
 
 // Task 3:
 // Synchronous example create karo jisme 3 console.log statements ho, aur ek asynchronous task setTimeout ke saath beech mein ho — output ka order predict karo.
@@ -4580,10 +3929,7 @@
 // }, 2000)
 // console.log("end");
 
-
-
 // setinterval tasks
-
 
 // const timer = setInterval(()=>{
 //         console.log("Ye har 2 sec baad aayega.");
@@ -4595,13 +3941,10 @@
 
 // }, 6000)
 
-
-
 // Task 1 — Countdown Timer (Reverse)
 
 // Ek number input lo (for example 5) aur setTimeout ka use karke har second me countdown print karo jab tak 0 na ho jaye.
 // Example:
-
 
 // let userInput = +prompt("Enter number")
 // let timeLeft = userInput
@@ -4611,12 +3954,9 @@
 //         timeLeft--
 //      }else{
 //         clearInterval(timer)
-//         console.log("go");  
+//         console.log("go");
 //      }
 // },1000)
-
-
-
 
 // Task 2 — Message Sequence
 // 3 alag-alag messages ko different time delays ke saath print karo:
@@ -4632,14 +3972,9 @@
 //     console.log("How are you");
 // }, 3000)
 
-
 // setTimeout(()=>{
 //     console.log("Bye");
 // }, 5000)
-
-
-
-
 
 // Task 1 — Auto Stop Clock
 // Har 1 second me current time print karo, lekin 10 second ke baad stop ho jaye.
@@ -4647,11 +3982,10 @@
 // let curTime = new Date
 // console.log(curTime.getHours(), curTime.getMinutes(), curTime.getSeconds());
 
-
 // console.log(`${hours}:${minutes}:${seconds}`);
 
 // const timer = setInterval(() => {
-//     let now = new Date(); 
+//     let now = new Date();
 //     let hours = now.getHours();
 //     let minutes = now.getMinutes();
 //     let seconds = now.getSeconds();
@@ -4662,14 +3996,10 @@
 //     clearInterval(timer);
 // }, 10000);
 
-
-
 // Har 2 second me ek multiplication table ka next line print karo (for example table of 5), jab tak 10 lines print na ho jaye.
-
 
 // let table = 5
 // let lines = 1
-
 
 // const timer = setInterval(()=>{
 //     console.log(`${table} * ${lines} = ${table * lines}`);
@@ -4678,9 +4008,8 @@
 //     if(lines > 10){
 //         clearInterval(timer)
 //     }
-    
-// },2000)
 
+// },2000)
 
 // ======================================================================================
 // Task 1: Simple Fetch & Log
@@ -4693,10 +4022,8 @@
 // }
 // fetchApi()
 
-
 // Task 2: Error Handling
 // Same API se fetch karo — aur agar network ya response me koi error aaye to try...catch se handle karo (log "Error occurred").
-
 
 // async function fetchApi() {
 //     try {
@@ -4708,9 +4035,6 @@
 //     }
 // }
 // fetchApi()
-
-
-
 
 // Task 3: Sequential Promises
 // Do async tasks define karo (delay(2s) aur delay(1s) returning Promise). Inko sequentially run karo ar logs karo:
@@ -4729,12 +4053,6 @@
 //     .then(() => {
 //         console.log("Second done");
 //     });
-
-
-
-
-
-
 
 // Task 4: Parallel Using Promise.all
 // 3 URLs hain, async fetch se data lete ho, inko simultaneously fire karo — Promise.all ke sath.
@@ -4757,7 +4075,6 @@
 // }
 // fetchSequential()
 
-
 // const urls = [
 //     "https://jsonplaceholder.typicode.com/posts/1",
 //     "https://jsonplaceholder.typicode.com/posts/2",
@@ -4774,9 +4091,6 @@
 //     console.log(results[2]); // third API result
 // }
 // fetchParallel();
-
-
-
 
 // Task 5: Dynamic Async Loop
 // Array of URLs lo aur for…of loop me sequentially super clean await coding se data fetch karo aur print karo.
@@ -4797,8 +4111,6 @@
 
 // fetchSequentially();
 
-
-
 // ================================================================================
 // promises
 
@@ -4808,12 +4120,10 @@
 //         resolve("ho gya");
 //      }else{
 //         reject("Kuch bura ho gaya!");
-        
+
 //      }
 // })
 // promises.then(values => console.log(values)).catch(error => console.log(error))
-
-
 
 // let p = new Promise((resolve,reject)=>{
 //     let success = false
@@ -4825,9 +4135,6 @@
 // })
 // .then((res)=> console.log(res)).catch((err)=> console.log(err))
 
-
-
-
 // let p = new Promise((resolve,reject)=>{
 //     let success = false
 //     if(success){
@@ -4837,7 +4144,6 @@
 //     }
 // })
 // .then((res)=> console.log(res)).catch((err)=> console.log(err)).finally(()=> console.log("promise end"))
-
 
 //  Advanced Methods
 // promise all
@@ -4849,7 +4155,6 @@
 // Promise.all([p1,p2,p3])
 // .then((res)=> console.log(res)).catch((err)=> console.log(err))
 
-
 // let p1 = new Promise((res)=> setTimeout(()=> res("1st done"),3000))
 // let p2 = new Promise((res)=> setTimeout(()=> res("2st done"),1000))
 // let p3 = new Promise((res)=> setTimeout(()=> res("3st done"),2000))
@@ -4857,9 +4162,6 @@
 // Promise.race([p1,p2,p3])
 // .then((result)=> console.log(result)
 // )
-
-
-
 
 // Task 1: delay(ms) function banao jo Promises use karke ms milliseconds baad resolve ho.
 //  delay(2000).then(() => console.log("2 seconds ho gaya"));
@@ -4871,12 +4173,7 @@
 // })
 // .then((res)=> console.log(res)).catch((err)=> console.log(err))
 
-
-
-
-
 // Task 2: Promise banake 50% success aur 50% failure simulate karo (resolve or reject randomly).
-
 
 // let p = new Promise((resolve,reject)=>{
 //     let success = Math.random() > 0.5
@@ -4888,9 +4185,6 @@
 // })
 // .then((res)=> console.log(res)).catch((err)=> console.log(err)).finally(()=> console.log("promise end"))
 
-
-
-
 // Task 3: 3 Promises parallel chalakar Promise.all() se result print karo, agar koi fail ho to .catch() use karo.
 
 // let p1 = Promise.resolve("1st done")
@@ -4898,8 +4192,6 @@
 // let p3 = Promise.resolve("3st done")
 // Promise.all([p1,p2,p3])
 // .then((res)=> console.log(res)).catch((err)=> console.log(err))
-
-
 
 // Task 4: Sequential chaining— promise1().then(...) fir promise2() call karo.
 
@@ -4920,7 +4212,7 @@
 // }
 
 // promise1().then((res)=> {
-//     console.log(res); 
+//     console.log(res);
 //     return promise2()
 // }
 // ).then((res2)=> {
@@ -4929,10 +4221,6 @@
 // ).catch((err)=> console.log(err)
 // )
 
-
-
-
-
 // Task 5: Promise.race() example banao jisme jo Promise sabse pehle resolve ya reject ho, usko handle karo.
 
 // let p1 = Promise.resolve("1st done")
@@ -4940,10 +4228,6 @@
 // let p3 = Promise.reject("3st done")
 // Promise.race([p1,p2,p3])
 // .then((res)=>console.log(res)).catch((err)=>console.log(err))
-
-
-
-
 
 // Task 6: 3 promises banao (2 resolve, 1 reject) aur Promise.all use karo → dekho kya hota hai.
 
@@ -4954,8 +4238,6 @@
 // Promise.all([p1,p2,p3])
 // .then((result)=> console.log(result)
 // )
-
-
 
 // Task 7: 3 promises banao different timeouts ke sath aur Promise.race use karo → pehle wala ka result console me dikhao.
 
@@ -4968,11 +4250,10 @@
 // )
 // ==========================================================================================
 
-// try catch 
+// try catch
 
-    // let x = 10 + y
-    // console.log(x);
-    
+// let x = 10 + y
+// console.log(x);
 
 // try {
 //     let x = 10 + y
@@ -4981,7 +4262,6 @@
 //     console.log("error mila", error.message);
 // }
 
-
 // let jsonData = `{"name":"Sumair"}`
 // try {
 //     const user = JSON.parse(jsonData)
@@ -4989,7 +4269,6 @@
 // } catch (error) {
 //     console.log(error.message);
 // }
-
 
 // try {
 //   console.log("API call kar raha ho...");
@@ -5000,20 +4279,16 @@
 //   console.log("Finally: API call end ho gayi (success ya fail dono me chalega)");
 // }
 
-
-
 // Task 1
 // Ek code likho jisme divide by zero check karo. Agar koi number 0 se divide ho raha ho to error throw karo aur catch me handle karo.
-
 
 // try {
 //     let divide = 10/0
 //     throw new Error("divide failed")
 // } catch (error) {
 //     console.log("error mila", error.message);
-    
-// }
 
+// }
 
 // try {
 //   let numerator = 10;
@@ -5030,13 +4305,8 @@
 //   console.log("Error mila:", error.message);
 // }
 
-
-
-
-
 // Task 2
 // Ek function parseUserData(json) banao jo JSON string le aur usko parse kare. Agar galat JSON ho to error catch karke "Invalid JSON" print karo.
-
 
 // function parseUserData(json){
 //     try {
@@ -5047,11 +4317,8 @@
 //     }
 // }
 
-
 // // parseUserData(`{"name":"Sumair"}`)
 // parseUserData(`{name:"Sumair"}`)
-
-
 
 // Task 3
 // API call simulate karo (Promise + setTimeout use karke). Agar success ho to "Data received" print karo, agar fail ho to error catch karke "API failed" print karo, aur finally me "Request finished" print karo.
@@ -5073,20 +4340,160 @@
 //     try {
 //         let data = await fakeApiCall();
 //         console.log(data);
-        
+
 //     } catch (error) {
 //         console.log("error message", error.message);
-//     } 
+//     }
 //     // finally{
 //     //     console.log("request finished");
-        
-//     // }   
+
+//     // }
 // }
 // apiCall()
 
+// ================================ database project =========================================
+// ================================ supabase sign up ==================================
+
+// console.log(client);
+
+let signupForm = document.getElementById("signupForm");
+if (signupForm) {
+  signupForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    let fullname = document.getElementById("fullname").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+    let phone = document.getElementById("phone").value;
+    let country = document.getElementById("country").value;
+    let birthdate = document.getElementById("birthdate").value;
+    let gender = document.getElementById("gender").value;
+    let terms = document.getElementById("terms").value;
+    let newsletter = document.getElementById("newsletter").value;
+    // console.log(fullname,email,password,phone,country,birthdate,gender,terms,newsletter);
+
+    // sign up with supabase
+    const { data, error } = await client.auth.signUp({
+      email: email,
+      password: password,
+      options: {
+      emailRedirectTo: 'login.html'
+    }
+    });
+    // let user = data.user.id;
+    // console.log("user id", user);
+    
+    if (error) {
+      console.log(error.message);
+    } else {
+      console.log("data", data);
+      alert("we have sent you a confirmation email");
+    }
+
+    // create object of data
+    let userData = {
+      fullname,
+      email,
+      phone,
+      country,
+      birthdate,
+      gender,
+      terms,
+      newsletter,
+    };
+    // insert data in table
+    const { error: userError } = await client
+      .from("practiceSignUp")
+      .insert([userData]);
+    if (userError) {
+      console.log(userError.message);
+    }
+
+    window.location.href = "login.html";
+
+    // reset form
+    signupForm.reset();
+  });
+}
+
+// ================================ supabase login ====================================
+
+let loginForm = document.getElementById("loginForm");
+if (loginForm) {
+  loginForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    let email = document.getElementById("email").value.trim();
+    let password = document.getElementById("password").value.trim();
+    // console.log(email,password);
+    const { data, error } = await client.auth.signInWithPassword({
+      email: email,
+      password: password,
+    });
+    if(error){
+        console.log(error.message);
+        alert("Invalid credentials")
+    }else{
+        console.log("data", data);
+        window.location.href = "dashboard.html"
+        loginForm.reset()
+    }
+
+  });
+}
+
+// ================================ supabase Get Current User ===============================
+
+// Check karna ho ke kaun login hai:
+// const { data: { user } } = await client.auth.getUser();
+// console.log(user);
+// console.log(user.identities[0].identity_data.sub);
+
+// ================================ supabase Get Current Session  ============================
+
+// const { data, error } = await client.auth.getSession()
+// console.log(data);
+// // console.log(data.session.access_token);
+// console.log(data.session.user.id);
+
+// 👉 getSession() ka main kaam ye hai ke aapko pata chale abhi kaun user login hai aur uske session (tokens) ki details kya hain.
+//  Ye ziada tar use hota hai:
+// Page reload ke baad login status check karne ke liye
+// Protected pages/ routes secure karne ke liye
+
+// ================================ supabase Logout   ============================
+
+let logoutBtn = document.getElementById('logoutBtn')
+if(logoutBtn){
+    logoutBtn.addEventListener('click', async (e)=>{
+        e.preventDefault()
+        const { error } = await client.auth.signOut()
+        if(error){
+            console.log(error.message);
+        }
+        window.location.href = "login.html"
+    })
+}
 
 
+// ================================ supabase forgot password   ============================
 
+let forgotPassword = document.getElementById('forgotPassword')
+if(forgotPassword){
+    forgotPassword.addEventListener('submit', async (e)=>{
+        e.preventDefault()
+        let email = document.getElementById('email').value
+        //   console.log(email);
+        const { data, error } = await client.auth.resetPasswordForEmail(email, {
+        redirectTo: '/login.html',
+        })
+          if (error) {
+            console.log(error.message);
+          }else{
+            console.log(data);
+            alert("we have sent you a reset password email")
+            forgotPassword.reset()
+          }
+    })
+}
 
 
 
@@ -5100,70 +4507,10 @@
 
 // Synchronous ASynchronous
 // ek ec commerce store banana hay jis mein products ko array of objects mein store karna hai.
-// jis bhi product per click kare wo product local storage mein store ho jaye.or iski complete details show ho jaye.next page per 
+// jis bhi product per click kare wo product local storage mein store ho jaye.or iski complete details show ho jaye.next page per
 // add to cart banana hy jis mein products ko local storage se uthana hai.or cart page per show karna hai.
 
 // pori e commerce banani hy like search filter add to cart remove from cart checkout payment
 // supabase auth and table database
 // registration form and admin with supabse
 // post app
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

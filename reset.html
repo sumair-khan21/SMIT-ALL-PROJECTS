@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 500px;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .logo {
+            margin-bottom: 20px;
+        }
+        
+        .logo i {
+            font-size: 50px;
+            color: #2575fc;
+            background: rgba(37, 117, 252, 0.1);
+            padding: 20px;
+            border-radius: 50%;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #444;
+        }
+        
+        input[type="password"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        input:focus {
+            outline: none;
+            border-color: #4a86e8;
+            box-shadow: 0 0 0 2px rgba(74, 134, 232, 0.2);
+        }
+        
+        .password-requirements {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #666;
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #2575fc;
+        }
+        
+        .password-requirements p {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #444;
+        }
+        
+        .requirement {
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .requirement i {
+            margin-right: 8px;
+            font-size: 12px;
+            color: #999;
+        }
+        
+        button {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-top: 10px;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .back-to-login {
+            margin-top: 25px;
+            color: #666;
+            font-size: 15px;
+        }
+        
+        .back-to-login a {
+            color: #2575fc;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-to-login a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 576px) {
+            .container {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <i class="fas fa-lock"></i>
+        </div>
+        
+        <h1>Reset Password</h1>
+        <p class="subtitle">Create a new password for your account.</p>
+        
+        <form>
+            <div class="form-group">
+                <label for="new-password">New Password</label>
+                <input type="password" id="new-password" name="new-password" required placeholder="Enter new password">
+                
+                <div class="password-requirements">
+                    <p>Password must include:</p>
+                    <div class="requirement">
+                        <i class="fas fa-check"></i>
+                        <span>At least 8 characters</span>
+                    </div>
+                    <div class="requirement">
+                        <i class="fas fa-check"></i>
+                        <span>One uppercase letter</span>
+                    </div>
+                    <div class="requirement">
+                        <i class="fas fa-check"></i>
+                        <span>One number</span>
+                    </div>
+                    <div class="requirement">
+                        <i class="fas fa-check"></i>
+                        <span>One special character</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm new password">
+            </div>
+            
+            <button type="submit">Reset Password</button>
+        </form>
+        
+        <p class="back-to-login"><a href="#"><i class="fas fa-arrow-left"></i> Back to Login</a></p>
+    </div>
+</body>
+</html>
