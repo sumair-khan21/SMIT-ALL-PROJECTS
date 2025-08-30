@@ -163,10 +163,10 @@
         <h1>Reset Password</h1>
         <p class="subtitle">Create a new password for your account.</p>
         
-        <form>
+        <form id="resetForm" >
             <div class="form-group">
                 <label for="new-password">New Password</label>
-                <input type="password" id="new-password" name="new-password" required placeholder="Enter new password">
+                <input type="password" id="newPassword" name="new-password" required placeholder="Enter new password">
                 
                 <div class="password-requirements">
                     <p>Password must include:</p>
@@ -183,7 +183,7 @@
                         <span>One number</span>
                     </div>
                     <div class="requirement">
-                        <i class="fas fa-check"></i>
+                        <i class="fas fa-check" ></i>
                         <span>One special character</span>
                     </div>
                 </div>
@@ -191,13 +191,16 @@
             
             <div class="form-group">
                 <label for="confirm-password">Confirm Password</label>
-                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm new password">
+                <input type="password" id="confirmPassword" name="confirm-password" required placeholder="Confirm new password">
             </div>
             
             <button type="submit">Reset Password</button>
         </form>
         
-        <p class="back-to-login"><a href="#"><i class="fas fa-arrow-left"></i> Back to Login</a></p>
+        <p class="back-to-login" ><a href="#"><i class="fas fa-arrow-left"></i> Back to Login</a></p>
     </div>
+
+ <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script   src="app.js" ></script>
 </body>
 </html>

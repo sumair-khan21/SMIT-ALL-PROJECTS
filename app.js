@@ -1,5 +1,9 @@
-import { client } from "./confg.js";
+// import { client } from "./confg.js";
 // console.log(client);
+const supabaseUrl = 'https://kerazyzofdhkkypiwpzw.supabase.co'
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtlcmF6eXpvZmRoa2t5cGl3cHp3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTMxMjAwMTMsImV4cCI6MjA2ODY5NjAxM30.aCmnptFsLXwrfuTL2FQl5NNAsHijYPnfEKL8_irzqNM'
+const client = supabase.createClient(supabaseUrl, supabaseKey)
+
 
 // let name = prompt("Apna naam batao:");
 // // console.log("Hello, " + name + "!");
@@ -4483,7 +4487,7 @@ if(forgotPassword){
         let email = document.getElementById('email').value
         //   console.log(email);
         const { data, error } = await client.auth.resetPasswordForEmail(email, {
-        redirectTo: '/login.html',
+        redirectTo: 'http://127.0.0.1:5500/reset.html',
         })
           if (error) {
             console.log(error.message);
@@ -4494,6 +4498,136 @@ if(forgotPassword){
           }
     })
 }
+
+
+// ================================ supabase reset password {  ============================
+
+let resetForm = document.getElementById('resetForm')
+if(resetForm){
+  resetForm.addEventListener('submit', async (e)=>{
+    e.preventDefault()
+    let newPassword = document.getElementById('newPassword').value
+    let confirmPassword = document.getElementById('confirmPassword').value
+    // console.log(newPassword);
+    // console.log(confirmPassword);
+    if(newPassword === confirmPassword){
+      const { data, error } = await client.auth.updateUser({
+      password: newPassword
+  })
+  if(error){
+    console.log(error.message);
+    alert("failed to reset password")
+  }else{
+    console.log(data);
+    alert("password reset successfully")
+    resetForm.reset()
+    window.location.href = "login.html"
+  }
+    }
+    
+  })
+}
+
+// ================================ supabase insert  ============================
+
+let addTodo = document.getElementById('addTodo')
+if(addTodo){
+  addTodo.addEventListener('submit', async (e)=>{
+    e.preventDefault()
+    let todoValue = document.getElementById('todoValue').value
+    // console.log(todoValue);
+    const { error } = await client
+  .from('practiceTodo')
+  .insert({  todoData: todoValue })
+  if(error){
+    console.log(error.message);
+    alert("failed to add todo")
+  }else{
+    alert("todo added successfully")
+    addTodo.reset()
+    fetchTodo()
+  }
+  })
+}
+
+// ================================ supabase fetch  ============================
+
+let todoList = document.getElementById('todoList')
+async function fetchTodo() {
+  const { data, error } = await client.from('practiceTodo').select('*');
+    if (error) {
+      console.log(error.message);
+    } else {
+      // console.log(data);
+      todoList.innerHTML = '';
+
+      data.forEach((item) => {
+        todoList.innerHTML += `
+        <li class="todo-item">
+                            <input type="checkbox" class="todo-checkbox">
+                            <span class="todo-text">${item.todoData}</span>
+                            <div class="todo-actions">
+                                <button class="edit-btn" onclick="edit(${item.id})"><i class="fas fa-edit"></i></button>
+                                <button class="delete-btn" onclick="deleteTodo(${item.id})"><i class="fas fa-trash"></i></button>
+                            </div>
+                        </li>
+        `
+      });
+    }
+}
+fetchTodo()
+
+// ================================ supabase delete  ============================
+
+async function deleteTodo(id) {
+  const { data, error } = await client
+  .from('practiceTodo')
+  .delete()
+  .eq('id', id)
+  if(error){
+    console.log(response.error.message);
+    alert("failed to delete todo")
+    return
+  }else{
+    alert("todo deleted successfully")
+    console.log(data);
+    fetchTodo()
+  }
+
+}
+
+// ================================ supabase update  ============================
+
+async function edit(id) {
+  let newTodo = prompt("Enter new todo")
+  if(!newTodo){
+    alert("todo is required")
+    return
+  }else{
+    const { error } = await client
+  .from('practiceTodo')
+  .update({ todoData: newTodo })
+  .eq('id', id)
+  if(error){
+    alert("failed to update todo")
+    return
+  }else{
+    // alert("todo updated successfully")
+    console.log("todo updated successfully");
+    fetchTodo()
+  }
+  }
+  
+}
+
+
+
+
+
+
+
+
+
 
 
 
