@@ -4621,14 +4621,65 @@ async function edit(id) {
 }
 
 
+// ================================ supabase insert image  ============================
+
+
+let ImageInsert = document.getElementById('ImageInsert')
+if(ImageInsert){
+  ImageInsert.addEventListener('click', async (e)=>{
+  e.preventDefault()
+    let fileInput = document.getElementById('fileInput').files[0]
+// console.log(fileInput);
+
+// ================================== upload image ============================
+const { data, error } = await client
+  .storage
+  .from('practiceImage')
+  .upload(`todos/${Date.now()}-${fileInput.name}`, fileInput, {
+    cacheControl: '3600',
+    upsert: false
+  })
+  // console.log(data);
+  // let userId = data.id
+  // console.log(userId);
+  
+
+  if(error){
+    console.log(error.message);
+  }else{
+    // console.log("upload success", data);
+
+    // ============================== get public url ===================================
+
+   const { data: publicUrlData } = client
+  .storage
+  .from('practiceImage')
+  .getPublicUrl(data.path)
+  //  console.log("Public URL:", publicUrlData.publicUrl)
+
+  // =============================== insert image url in table ============================
+
+  let imageUrl = publicUrlData.publicUrl
+  const { error } = await client
+  .from('practiceTodo')
+  .insert({ imageUrl: imageUrl })
+
+  if(error){
+    console.log(error.message);
+  }else{
+    console.log("image url inserted successfully");
+    
+  }
 
 
 
+  }
+
+})
+}
 
 
-
-
-
+// ================================ supabase fetch image  ============================
 
 
 
