@@ -1,3 +1,7 @@
+@import "tailwindcss";
+
+
+
 .btn{
     background-color: blue;
     color: white;
@@ -5,4 +9,41 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+
+.heroMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.heroText h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.heroText p{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.heroBtn{
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px;
+}
+
+.heroImage img{
+    width: 400px;
+    height:  auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }

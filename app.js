@@ -4621,7 +4621,7 @@ async function edit(id) {
 }
 
 
-// ================================ supabase insert image  ============================
+// ================================ supabase upload image in bucket  ============================
 
 
 let ImageInsert = document.getElementById('ImageInsert')
@@ -4631,7 +4631,6 @@ if(ImageInsert){
     let fileInput = document.getElementById('fileInput').files[0]
 // console.log(fileInput);
 
-// ================================== upload image ============================
 const { data, error } = await client
   .storage
   .from('practiceImage')
@@ -4639,7 +4638,7 @@ const { data, error } = await client
     cacheControl: '3600',
     upsert: false
   })
-  // console.log(data);
+  // console.log(data.path);
   // let userId = data.id
   // console.log(userId);
   
@@ -4660,9 +4659,11 @@ const { data, error } = await client
   // =============================== insert image url in table ============================
 
   let imageUrl = publicUrlData.publicUrl
+  let oldPath = data.path
   const { error } = await client
   .from('practiceTodo')
-  .insert({ imageUrl: imageUrl })
+  .insert({ imageUrl: imageUrl,
+  imagePath: oldPath })
 
   if(error){
     console.log(error.message);
@@ -4670,9 +4671,6 @@ const { data, error } = await client
     console.log("image url inserted successfully");
     
   }
-
-
-
   }
 
 })
@@ -4680,6 +4678,137 @@ const { data, error } = await client
 
 
 // ================================ supabase fetch image  ============================
+
+let fetchImage = document.getElementById('fetchImage')
+
+async function fetchTodoImage() {
+  const { data, error } = await client
+  .from('practiceTodo')
+  .select("*")
+  if(error){
+    alert("Error on fetch images")
+  }else{
+    // console.log(data);
+    fetchImage.innerHTML = "";
+    data.forEach((items)=>{
+      fetchImage.innerHTML += `
+      <img src="${items.imageUrl}" alt="">
+       <div class="preview-actions">
+                <button class="edit-btn" onclick="editImage('${items.imagePath}')"><i class="fas fa-edit"></i></button>
+                <button class="delete-btn" onclick="deleteImage('${items.imagePath}')"><i class="fas fa-times"></i></button>
+            </div>
+      `
+    })
+    
+  }
+}
+
+fetchTodoImage()
+
+
+// ===================== supabase Update Image (replace old with new)  ============================
+
+
+async function editImage(oldPath) {
+  // 1. File picker
+  let newFileInput = document.createElement("input");
+  newFileInput.type = "file";
+  newFileInput.accept = "image/*";
+  newFileInput.click();
+
+  newFileInput.onchange = async () => {
+    let file = newFileInput.files[0];
+    if (!file) return;
+
+    // 2. New path generate karna
+    let newPath = `todos/${Date.now()}-${file.name}`;
+
+    // 3. Supabase bucket me upload (naye path pe)
+    const { data, error } = await client
+      .storage
+      .from('practiceImage')
+      .upload(newPath, file, {
+        cacheControl: '3600',
+        upsert: false
+      });
+
+    if (error) {
+      console.log("Upload failed:", error.message);
+      return;
+    }
+
+    console.log("Image uploaded successfully:", data);
+
+    // 4. Naya public URL lena
+    const { data: publicUrlData } = client
+      .storage
+      .from('practiceImage')
+      .getPublicUrl(newPath);
+
+    let newUrl = publicUrlData.publicUrl;
+
+    // 5. Table me imageUrl + imagePath update karna
+    const { error: updateError } = await client
+      .from('practiceTodo')
+      .update({
+        imageUrl: newUrl,
+        imagePath: newPath
+      })
+      .eq('imagePath', oldPath);
+
+    if (updateError) {
+      console.log("DB update error:", updateError.message);
+    } else {
+      console.log("Database updated with new image URL & path");
+
+      // 6. Old image ko bucket se delete karna
+      await client.storage.from('practiceImage').remove([oldPath]);
+
+      fetchTodoImage(); 
+    }
+  };
+}
+
+
+
+
+
+// ===================== supabase Delete Image  ============================
+
+async function deleteImage(path) {
+  const { error } = await client.storage.from('practiceImage').remove([path]);
+  if (error) {
+    console.log("Delete error:", error.message);
+  } else {
+    console.log("Image deleted from storage");
+
+    const { error: dbError } = await client
+      .from('practiceTodo')
+      .delete()
+      .eq('imagePath', path);
+    if (dbError) {
+      console.log("DB delete error:", dbError.message);
+    } else {
+      console.log("Image record deleted from database");
+      fetchTodoImage(); 
+    }
+  }  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
