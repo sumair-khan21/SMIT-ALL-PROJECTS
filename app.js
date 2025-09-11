@@ -27,7 +27,7 @@ const client = supabase.createClient(supabaseUrl, supabaseKey)
 //  console.log(spec);
 
 // ------------------------------------------------------------------
-// ppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+// pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
 // atm machine
 
 // let pin = prompt("Enter your Pin!");
