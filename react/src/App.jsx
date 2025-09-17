@@ -1,10 +1,13 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 import './index.css'
 import MyUseState from './Components/MyUseState'
 import NormalCss from './Components/NormalCss'
 import InlineCss from './Components/InlineCss'
 import ModuleCss from './Components/ModuleCss'
 import Tailwind from './Components/Tailwind'
+import FormHandling from './Components/FormHandling'
+import OneWayBinding from './Components/OneWayBinding'
+import TwoWayBinding from './Components/TwoWayBinding'
 
 
 const App = () => {
@@ -36,7 +39,14 @@ const App = () => {
     {/* <ModuleCss /> */}
     {/* ========================================= Tailwind Css ======================================= */}
     {/* <Tailwind /> */}
-    
+    {/* ========================================= Form Handling  ======================================= */}
+    <FormHandling />
+    {/* ========================================= One way data binding  ======================================= */}
+    {/* <OneWayBinding /> */}
+        {/* ========================================= two way data binding  ======================================= */}
+        {/* <TwoWayBinding /> */}
+
+
     
     
     
