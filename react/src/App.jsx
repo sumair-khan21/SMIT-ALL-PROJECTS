@@ -8,6 +8,7 @@ import Tailwind from './Components/Tailwind'
 import FormHandling from './Components/FormHandling'
 import OneWayBinding from './Components/OneWayBinding'
 import TwoWayBinding from './Components/TwoWayBinding'
+import AllTasks from './Components/AllTasks'
 
 
 const App = () => {
@@ -23,6 +24,9 @@ const App = () => {
 
   return (
     <>
+    {/* ============================== All Tasks Here ==================================== */}
+    <AllTasks />
+    
     {/* <h1>Hello {userName}</h1>
     <h1>Hello {age}</h1> */}
     {/* <h1>Value of a is {a}</h1>
@@ -40,7 +44,7 @@ const App = () => {
     {/* ========================================= Tailwind Css ======================================= */}
     {/* <Tailwind /> */}
     {/* ========================================= Form Handling  ======================================= */}
-    <FormHandling />
+    {/* <FormHandling /> */}
     {/* ========================================= One way data binding  ======================================= */}
     {/* <OneWayBinding /> */}
         {/* ========================================= two way data binding  ======================================= */}
