@@ -9,6 +9,13 @@ import FormHandling from './Components/FormHandling'
 import OneWayBinding from './Components/OneWayBinding'
 import TwoWayBinding from './Components/TwoWayBinding'
 import AllTasks from './Components/AllTasks'
+import Props from './Components/Props'
+import ClassComp from './Components/ClassComp'
+import DestructuringProps from './Components/DestructuringProps'
+import Parent from './Components/PropsChildren'
+import ReactEvents from './Components/ReactEvents'
+import ReactConditionalRendering from './Components/ReactConditionalRendering'
+import ReactLists from './Components/ReactLists'
 
 
 const App = () => {
@@ -25,33 +32,47 @@ const App = () => {
   return (
     <>
     {/* ============================== All Tasks Here ==================================== */}
-    <AllTasks />
-    
+    {/* <AllTasks /> */}
+     {/* ============================== All Tasks Here ==================================== */}
+
     {/* <h1>Hello {userName}</h1>
     <h1>Hello {age}</h1> */}
     {/* <h1>Value of a is {a}</h1>
     <button className='btn' onClick={abc}>Click Me</button> */}
 
 
-    {/* ========================================= useState ========================================== */}
+    {/* ======================= useState ================================= */}
     {/* <MyUseState /> */}
-    {/* ========================================= Normal Css ======================================= */}
+    {/* ======================= Normal Css ============================== */}
     {/* <NormalCss /> */}
-    {/* ========================================= Inline Css ======================================= */}
+    {/* ======================= Inline Css ============================== */}
     {/* <InlineCss /> */}
-    {/* ========================================= Module Css ======================================= */}
+    {/* ======================= Module Css ============================== */}
     {/* <ModuleCss /> */}
-    {/* ========================================= Tailwind Css ======================================= */}
+    {/* ======================= Tailwind Css ============================== */}
     {/* <Tailwind /> */}
-    {/* ========================================= Form Handling  ======================================= */}
+    {/* ======================= Form Handling  ============================== */}
     {/* <FormHandling /> */}
-    {/* ========================================= One way data binding  ======================================= */}
+    {/* ======================= One way data binding  ============================== */}
     {/* <OneWayBinding /> */}
-        {/* ========================================= two way data binding  ======================================= */}
-        {/* <TwoWayBinding /> */}
-
-
-    
+    {/* ======================= two way data binding  ============================== */}
+    {/* <TwoWayBinding /> */}
+     {/* ======================= Props  ============================== */}
+     {/* <Props /> */}
+     {/* ======================= Class Comp  ============================== */}
+     {/* <ClassComp /> */}
+       {/* ======================= Props Destructure ============================== */}
+       {/* <DestructuringProps /> */}
+       {/* ======================= Props Child ============================== */}
+       {/* <Parent /> */}
+       {/* ======================= Reaact Event ============================== */}
+       {/* <ReactEvents /> */}
+       {/* ======================= React Conditional Rendering ====================== */}
+        {/* <ReactConditionalRendering isGoal={true} /> */}
+          {/* ======================= React Conditional && ====================== */}
+          {/* <ReactConditionalRendering brand="Mustang" /> */}
+       {/* ======================= React Lists ====================== */}
+       <ReactLists />
     
     
     </>
