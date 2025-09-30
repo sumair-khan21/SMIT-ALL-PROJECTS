@@ -16,6 +16,8 @@ import Parent from './Components/PropsChildren'
 import ReactEvents from './Components/ReactEvents'
 import ReactConditionalRendering from './Components/ReactConditionalRendering'
 import ReactLists from './Components/ReactLists'
+// import ReactForm from './Components/ReactForm'
+import MultipleInputs from './Components/MultipleInputs'
 
 
 const App = () => {
@@ -72,7 +74,14 @@ const App = () => {
           {/* ======================= React Conditional && ====================== */}
           {/* <ReactConditionalRendering brand="Mustang" /> */}
        {/* ======================= React Lists ====================== */}
-       <ReactLists />
+       {/* <ReactLists /> */}
+       
+       {/* ======================= React Form ====================== */}
+       {/* <ReactForm /> */}
+       
+       {/* ======================= React multiple inputs ====================== */}
+       {/* <MultipleInputs /> */}
+       
     
     
     </>
