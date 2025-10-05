@@ -29,6 +29,11 @@ import MyUseRef from './Components/MyUseRef'
 import Card from './Components/Card'
 import Ex from './Components/Ex'
 import ApiCall from './Components/ApiCall'
+import Header from './Components/Header'
+import Section from './Components/Section'
+import Footer from './Components/Footer'
+import { useContext } from 'react'
+import { DataContext } from './context/UserContext'
 // import ReactForm from './Components/ReactForm'
 // import MultipleInputs from './Components/MultipleInputs'
 // import CheckboxInput from './Components/CheckboxInput'
@@ -87,6 +92,11 @@ const App = () => {
 //     "profile_image": "https://randomuser.me/api/portraits/men/78.jpg"
 //   }
 // ]
+
+
+    const data = useContext(DataContext)
+    console.log(data);
+    
 
 
   return (
@@ -204,7 +214,13 @@ const App = () => {
 
             {/* <Ex users="Sumair"/> */}
             {/* =================================== Api Calling ====================== */}
-            <ApiCall />
+            {/* <ApiCall /> */}
+
+            {/* ====================== react hook useContext ===================== */}
+            <h1>App {data}</h1>
+            <Header />
+            <Section />
+            <Footer />
 
 
       {/* ===================================== sheryians code ========================== */} 
