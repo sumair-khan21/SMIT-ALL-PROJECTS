@@ -16,8 +16,23 @@ import Parent from './Components/PropsChildren'
 import ReactEvents from './Components/ReactEvents'
 import ReactConditionalRendering from './Components/ReactConditionalRendering'
 import ReactLists from './Components/ReactLists'
+import ReactPortal from './Components/ReactPortal'
+import ReactRouter from './Components/ReactRouterNav'
+import Home from './Pages/Home'
+import About from './Pages/About'
+import Contact from './Pages/Contact'
+import { Route, Routes } from 'react-router-dom'
+import User from './Pages/User'
+import UserDetail from './Pages/UserDetail'
+import UserPosts from './Pages/UserPosts'
+import MyUseRef from './Components/MyUseRef'
+import Card from './Components/Card'
+import Ex from './Components/Ex'
+import ApiCall from './Components/ApiCall'
 // import ReactForm from './Components/ReactForm'
-import MultipleInputs from './Components/MultipleInputs'
+// import MultipleInputs from './Components/MultipleInputs'
+// import CheckboxInput from './Components/CheckboxInput'
+// import RadioInput from './Components/RadioInput'
 
 
 const App = () => {
@@ -30,6 +45,49 @@ const App = () => {
     //     console.log("Button Clicked");
     //     setA(20)
     // }
+
+
+
+    // ====================================sheryians code ============================
+
+//     const users = [
+//   {
+//     "name": "Ali Khan",
+//     "age": 25,
+//     "city": "Karachi",
+//     "profession": "Frontend Developer",
+//     "profile_image": "https://randomuser.me/api/portraits/men/45.jpg"
+//   },
+//   {
+//     "name": "Sara Ahmed",
+//     "age": 28,
+//     "city": "Lahore",
+//     "profession": "Graphic Designer",
+//     "profile_image": "https://randomuser.me/api/portraits/women/68.jpg"
+//   },
+//   {
+//     "name": "Hassan Raza",
+//     "age": 30,
+//     "city": "Islamabad",
+//     "profession": "Software Engineer",
+//     "profile_image": "https://randomuser.me/api/portraits/men/23.jpg"
+//   },
+//   {
+//     "name": "Zainab Fatima",
+//     "age": 26,
+//     "city": "Rawalpindi",
+//     "profession": "Content Writer",
+//     "profile_image": "https://randomuser.me/api/portraits/women/55.jpg"
+//   },
+//   {
+//     "name": "Usman Ali",
+//     "age": 32,
+//     "city": "Faisalabad",
+//     "profession": "Digital Marketer",
+//     "profile_image": "https://randomuser.me/api/portraits/men/78.jpg"
+//   }
+// ]
+
 
   return (
     <>
@@ -81,6 +139,76 @@ const App = () => {
        
        {/* ======================= React multiple inputs ====================== */}
        {/* <MultipleInputs /> */}
+       
+       {/* ======================= React checkbox inputs ====================== */}
+       {/* <CheckboxInput /> */}
+       {/* ======================= React radio inputs ====================== */}
+       {/* <RadioInput /> */}
+       {/* ======================= React Portal inputs ====================== */}
+       {/* <ReactPortal /> */}
+       {/* ======================= basic React Routes ======================  */}
+       {/* <ReactRouter />
+       <Routes> 
+          <Route index element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+       </Routes> */}
+       
+       {/* ======================= dynamic React Routes ======================  */}
+       {/* <ReactRouter />
+       <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/users' element={<User />} />
+        <Route path='/users/:id' element={<UserDetail />} />
+       </Routes> */}
+
+       {/* ======================= nested React Routes ======================  */}
+        {/* <ReactRouter />
+       <Routes>
+        <Route path='/' element={<Home />} /> */}
+
+        {/* Parent Route */}
+        {/* <Route path='/users' element={<User />} /> */}
+
+        {/* Nested Route */}
+        {/* <Route path='/users/:id' element={<UserDetail />}>
+          <Route path='posts' element={<UserPosts />} />
+        </Route>
+      </Routes> */}
+
+
+      {/* ====================== useRef ================================================ */}
+      {/* <MyUseRef /> */}
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* ===================================== sheryians code ========================== */}
+      {/* ========================== Props ============================================== */}
+            {/* <div className='p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 bg-gray-100 min-h-screen'>
+              {
+                users.map((user, index)=>(
+                  <Card key={index} userName={user.name} age={user.age} city={user.city} profession={user.profession} profile_image={user.profile_image}/>
+                ))
+              }
+
+            </div> */}
+
+            {/* <Ex users="Sumair"/> */}
+            {/* =================================== Api Calling ====================== */}
+            <ApiCall />
+
+
+      {/* ===================================== sheryians code ========================== */} 
+
        
     
     
