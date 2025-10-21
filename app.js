@@ -4477,7 +4477,6 @@ if(logoutBtn){
     })
 }
 
-//ooooooooooooooooooooooooooooo
 // ================================ supabase forgot password   ============================
 
 let forgotPassword = document.getElementById('forgotPassword')
@@ -4498,7 +4497,6 @@ if(forgotPassword){
           }
     })
 }
-//====================================hjgsahgdgsad
 
 // ================================ supabase reset password {  ============================
 

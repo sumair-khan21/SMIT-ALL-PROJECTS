@@ -34,6 +34,7 @@ import Section from './Components/Section'
 import Footer from './Components/Footer'
 import { useContext } from 'react'
 import { DataContext } from './context/UserContext'
+import MyuseEffect from './Components/MyuseEffect'
 // import ReactForm from './Components/ReactForm'
 // import MultipleInputs from './Components/MultipleInputs'
 // import CheckboxInput from './Components/CheckboxInput'
@@ -94,8 +95,8 @@ const App = () => {
 // ]
 
 
-    const data = useContext(DataContext)
-    console.log(data);
+    // const data = useContext(DataContext)
+    // console.log(data);
     
 
 
@@ -187,8 +188,9 @@ const App = () => {
       </Routes> */}
 
 
-      {/* ====================== useRef ================================================ */}
+      {/* ====================== All hooks  ================================================ */}
       {/* <MyUseRef /> */}
+      <MyuseEffect />
 
 
 
@@ -217,10 +219,10 @@ const App = () => {
             {/* <ApiCall /> */}
 
             {/* ====================== react hook useContext ===================== */}
-            <h1>App {data}</h1>
+            {/* <h1>App {data}</h1>
             <Header />
             <Section />
-            <Footer />
+            <Footer /> */}
 
 
       {/* ===================================== sheryians code ========================== */} 
