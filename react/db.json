@@ -1,0 +1,47 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "food": "biryani",
+      "friuts": "Mango",
+      "vege": "potato"
+    },
+    {
+      "id": "3",
+      "food": "biryani",
+      "friuts": "Mango",
+      "vege": "potato"
+    },
+    {
+      "id": "5a83",
+      "laptop": "BBQ",
+      "game": "apple",
+      "vege": "tomato"
+    },
+    {
+      "id": "47e9",
+      "laptop": "BBQ",
+      "game": "apple"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Sums",
+      "age": 1,
+      "occu": "developer"
+    },
+    {
+      "id": "2",
+      "name": "Sums",
+      "age": 1,
+      "occu": "developer"
+    },
+    {
+      "id": "3",
+      "name": "Sums",
+      "age": 2,
+      "occu": "developer"
+    }
+  ]
+}
