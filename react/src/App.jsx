@@ -31,10 +31,11 @@ import Ex from './Components/Ex'
 import ApiCall from './Components/ApiCall'
 import Header from './Components/Header'
 import Section from './Components/Section'
-import Footer from './Components/Footer'
-import { useContext } from 'react'
+// import Footer from './Components/Footer'
+// import { useContext } from 'react'
 import { DataContext } from './context/UserContext'
 import MyuseEffect from './Components/MyuseEffect'
+import MyUseContext from './Components/MyUseContext'
 // import ReactForm from './Components/ReactForm'
 // import MultipleInputs from './Components/MultipleInputs'
 // import CheckboxInput from './Components/CheckboxInput'
@@ -190,7 +191,8 @@ const App = () => {
 
       {/* ====================== All hooks  ================================================ */}
       {/* <MyUseRef /> */}
-      <MyuseEffect />
+      {/* <MyuseEffect /> */}
+      <MyUseContext />
 
 
 
