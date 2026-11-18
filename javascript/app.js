@@ -4830,10 +4830,7 @@ async function deleteImage(path) {
 // --------------------------------------------------
 // oklllllllllkkkkkkkkkkkkkkkkkkkkk
 // oooooooooooooooooooooo
-//aaaaaaaaaaaaaaaaaaaakkkkkkkkkkkkkkkkkkkkkkk
-//.....................
 
-// ,,,,,,,
 
 
 
